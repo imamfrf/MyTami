@@ -20,7 +20,7 @@
         android:id="@+id/imageView_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/logo_my_tami"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,5 +49,117 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_login_to_continue">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_corporate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22dp"
+            android:layout_marginTop="@dimen/margin_22dp"
+            android:layout_marginEnd="@dimen/margin_22dp"
+            android:background="@drawable/spinner_custom_corporate"
+            android:elevation="4dp"
+            android:paddingStart="34dp"
+            android:paddingTop="@dimen/padding_8dp"
+            android:paddingEnd="@dimen/padding_8dp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:spinnerMode="dropdown"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_22dp"
+            android:background="@drawable/spinner_custom_level"
+            android:elevation="4dp"
+            android:paddingStart="34dp"
+            android:paddingTop="@dimen/padding_8dp"
+            android:paddingEnd="@dimen/padding_8dp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:spinnerMode="dropdown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_22dp"
+            android:background="@drawable/edittext_rounded"
+            android:drawableStart="@drawable/ic_id_person_20px"
+            android:drawablePadding="@dimen/padding_12dp"
+            android:elevation="4dp"
+            android:hint="Login ID"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_10dp"
+            android:paddingTop="@dimen/padding_8dp"
+            android:paddingEnd="@dimen/padding_8dp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_22dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_22dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:background="@drawable/edittext_rounded"
+            android:drawableStart="@drawable/ic_lock_outline_20px"
+            android:drawablePadding="@dimen/padding_12dp"
+            android:elevation="4dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_10dp"
+            android:paddingTop="@dimen/padding_8dp"
+            android:paddingEnd="@dimen/padding_8dp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_22dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="Lupa password?"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_login"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_forgot_password" />
 
 </android.support.constraint.ConstraintLayout>
