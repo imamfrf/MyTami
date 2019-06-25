@@ -3,6 +3,12 @@
     <color name="colorPrimary">#53A0D7</color>
     <color name="colorPrimaryDark">#0584BF</color>
     <color name="colorAccent">#6EBC79</color>
+    <color name="colorAccentTrans">#106EBC79</color>
+    <color name="colorBackground">#EFEFEF</color>
+    <color name="colorTProgressStatus0">#F59C1A</color>
+    <color name="colorTProgressStatus1">#49B6D6</color>
+    <color name="colorTProgressStatus2">#7FB969</color>
+    <color name="colorReimbursementStatus0">#5B6392</color>
 
     <color name="colorTextGrey">#9E9E9E</color>
 

@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">MyTami</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="travel_request">Travel Request</string>
+    <string name="travel_booking">Travel Booking</string>
+    <string name="reimbursement">Reimbursement</string>
+    <string name="travel_request_approval">Travel Request Approval</string>
+    <string name="reimbursement_approval">Reimbursement Approval</string>
+    <string name="travel_cancel_approval">Travel Cancel Approval</string>
+    <string name="tprogress_status_0">Travel Request Submitted. Waiting for Line Manager Approval</string>
+    <string name="tprogress_status_1">Travel Request Approved. Waiting for Booking</string>
+    <string name="tprogress_status_2">Ticket or Voucher Issued. Waiting for Posting &amp; Fiatur</string>
+    <string name="reimbursement_status_0">Special Claim Request Submitted. Waiting for Line Manager Approval</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+
     <string-array name="corporates_array">
         <item>BKI</item>
         <item>Infomedia</item>

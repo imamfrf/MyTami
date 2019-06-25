@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         button_login.setOnClickListener {
-            val intent = Intent(this, TravelRequestTravelTypeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
