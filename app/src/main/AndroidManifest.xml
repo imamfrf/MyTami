@@ -12,10 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".TravelRequsetTravelItineraryActivity"
-            android:label="Travel Itinerary"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".TravelRequestApprovalDetail"
+            android:label="Meeting Client MCD">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,11 +21,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".TravelRequsetTravelItineraryActivity"
+            android:label="Travel Itinerary"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
             android:name=".TravelRequestTravelTypeActivity"
             android:label="Travel Request"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
