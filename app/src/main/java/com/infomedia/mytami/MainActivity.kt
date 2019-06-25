@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity() {
                     fragment = ProgressFragment()
                     loadFragment(fragment)
                 }
+                2 -> {
+                    fragment = ProfileFragment()
+                    loadFragment(fragment)
+                }
                 else -> {
                     fragment = HomeFragment()
                     loadFragment(fragment)

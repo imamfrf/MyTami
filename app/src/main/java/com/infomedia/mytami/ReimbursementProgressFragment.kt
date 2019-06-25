@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_reimbursement_progress.view.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
@@ -36,6 +37,10 @@ class ReimbursementProgressFragment : Fragment() {
 
                     }
                 })
+        }
+
+        if (listItems.size > 0){
+            activity?.bottom_navigation?.setNotification(" ", 1)
         }
         return view
     }

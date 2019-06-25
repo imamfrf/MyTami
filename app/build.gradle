@@ -36,4 +36,7 @@ dependencies {
     //btm nav library
     implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
     implementation 'androidx.fragment:fragment:1.0.0'
+
+    //image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 }

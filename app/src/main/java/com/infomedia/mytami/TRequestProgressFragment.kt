@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
 
@@ -21,6 +22,7 @@ class TRequestProgressFragment : Fragment() {
         val view: View = inflater!!.inflate(R.layout.fragment_trequest_progress, null)
 
         recyclerTravelRequest = view.recyclerV_tprogress
+
 
 
         listItems = arrayListOf()
@@ -37,6 +39,10 @@ class TRequestProgressFragment : Fragment() {
 
                     }
                 })
+        }
+
+        if (listItems.size > 0){
+            activity?.bottom_navigation?.setNotification(" ", 1)
         }
         return view
     }
