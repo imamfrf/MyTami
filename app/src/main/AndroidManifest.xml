@@ -13,8 +13,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".TravelRequestTravelTypeActivity"
-            android:label="Travel Request"
+            android:name=".TravelRequsetTravelItineraryActivity"
+            android:label="Travel Itinerary"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
-
-        </activity>
+        <activity
+            android:name=".TravelRequestTravelTypeActivity"
+            android:label="Travel Request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
