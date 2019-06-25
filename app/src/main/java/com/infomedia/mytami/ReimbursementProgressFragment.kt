@@ -40,7 +40,7 @@ class ReimbursementProgressFragment : Fragment() {
         }
 
         if (listItems.size > 0){
-            activity?.bottom_navigation?.setNotification(" ", 1)
+            activity?.bottom_navigation?.setNotification(listItems.size.toString(), 1)
         }
         return view
     }
