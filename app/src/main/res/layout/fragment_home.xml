@@ -43,10 +43,12 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/cardview_travel_booking"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_request_title">
+            app:layout_constraintTop_toBottomOf="@id/tv_request_title"
+            android:focusable="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

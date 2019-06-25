@@ -16,4 +16,19 @@
     <string name="change_password">Change Password</string>
     <string name="help">Help</string>
     <string name="logout">Logout</string>
+
+    <string-array name="corporates_array">
+        <item>BKI</item>
+        <item>Infomedia</item>
+        <item>Metra</item>
+        <item>Telin</item>
+        <item>Telkom</item>
+        <item>TM</item>
+    </string-array>
+
+    <string-array name="levels_array">
+        <item>Fiatur</item>
+        <item>User</item>
+    </string-array>
+
 </resources>
