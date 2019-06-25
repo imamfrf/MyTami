@@ -18,10 +18,11 @@ class HomeFragment : androidx.fragment.app.Fragment() {
 
         val view: View = inflater!!.inflate(R.layout.fragment_home, null)
 
-        view.img_travel_request.setOnClickListener {
+        view.cardview_travel_request.setOnClickListener {
             val intent = Intent(context, TravelRequestTravelTypeActivity::class.java)
             startActivity(intent)
         }
+
 
         return view
     }
