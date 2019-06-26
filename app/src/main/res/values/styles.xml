@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
     </style>
 
     <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
@@ -23,8 +24,8 @@
         <item name="colorControlActivated">@color/colorPrimary</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
         <item name="colorControlNormal">@color/colorTextGrey</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
     </style>
-
 
 
 </resources>

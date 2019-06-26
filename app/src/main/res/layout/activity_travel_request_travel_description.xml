@@ -27,19 +27,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:baselineAligned="false"
             android:gravity="center"
             android:orientation="horizontal"
-            android:paddingStart="@dimen/padding_10dp"
-            android:paddingEnd="@dimen/padding_10dp"
+            android:paddingStart="@dimen/padding_12dp"
+            android:paddingEnd="@dimen/padding_12dp"
             android:paddingBottom="@dimen/padding_8dp">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_8dp"
-                android:layout_marginEnd="@dimen/margin_8dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_2dp"
+                android:paddingBottom="@dimen/padding_2dp">
 
                 <TextView
                     android:layout_width="18dp"
@@ -67,7 +68,9 @@
                 android:layout_marginStart="@dimen/margin_8dp"
                 android:layout_marginEnd="@dimen/margin_8dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_2dp"
+                android:paddingBottom="@dimen/padding_2dp">
 
                 <TextView
                     android:layout_width="18dp"
@@ -102,7 +105,7 @@
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:background="@drawable/oval_background_blue"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="3"
                     android:textColor="@color/md_white_1000"
@@ -112,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_4dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Description"
                     android:textColor="@color/colorPrimary"
                     android:textSize="12sp" />
@@ -555,6 +558,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
+                        android:id="@+id/imageView_expand_arrow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -575,7 +579,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_8dp"
                     app:el_duration="1000"
-                    app:el_expanded="false">
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -697,7 +702,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Tarif Penginapan"
+                                android:text="Bantuan Transportasi Bandara"
                                 android:textColor="@color/md_white_1000" />
 
                             <TextView
@@ -737,7 +742,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/lato_regular"
-                                android:text="Tarif Penginapan"
+                                android:text="Tarif Harian"
                                 android:textColor="@color/md_white_1000" />
 
                             <TextView
