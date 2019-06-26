@@ -42,4 +42,5 @@ dependencies {
 
     //others
     implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

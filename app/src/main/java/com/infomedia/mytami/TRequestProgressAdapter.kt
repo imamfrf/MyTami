@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.getDrawable
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -47,10 +46,10 @@ class TRequestProgressAdapter(private val listItems: List<TravelRequest>, privat
     class ViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         // MARK: - Public Properties
         val cardView: CardView? = itemView?.findViewById(R.id.cardview_progress)
-        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_progress_request_id)
-        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_progress_request_date)
-        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_progress_travel_date)
-        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_progress_destination)
+        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_request_id_approval)
+        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_prequest_date_approval)
+        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_travel_date_approval)
+        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_destination_approval)
         val tvRequestStatus: TextView? = itemView?.findViewById(R.id.tv_progress_status)
         val layoutStatus: ConstraintLayout? = itemView?.findViewById(R.id.layout_progress_status)
 

@@ -45,10 +45,10 @@ class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequ
     class ViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         // MARK: - Public Properties
         val cardView: CardView? = itemView?.findViewById(R.id.cardview_progress)
-        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_progress_request_id)
-        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_progress_request_date)
-        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_progress_travel_date)
-        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_progress_destination)
+        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_request_id_approval)
+        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_prequest_date_approval)
+        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_travel_date_approval)
+        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_destination_approval)
         val tvRequestStatus: TextView? = itemView?.findViewById(R.id.tv_progress_status)
         val layoutStatus: ConstraintLayout? = itemView?.findViewById(R.id.layout_progress_status)
 
