@@ -33,7 +33,7 @@ class TRequestProgressFragment : Fragment() {
         recyclerTravelRequest.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestProgressAdapter(listItems, this@TRequestProgressFragment,
+            adapter = TRequestProgressAdapter(listItems, context,
                 object : TRequestProgressAdapter.OnItemClicked {
                     override fun onItemClick(position: Int){
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()

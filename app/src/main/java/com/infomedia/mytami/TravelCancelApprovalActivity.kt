@@ -7,21 +7,21 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
 import kotlinx.android.synthetic.main.activity_travel_request_approval.*
-import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
-class TravelRequestApprovalActivity : AppCompatActivity() {
+class TravelCancelApprovalActivity : AppCompatActivity() {
+
     private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelRequestApproval: RecyclerView
+    private lateinit var recyclerTravelCancelApproval: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel_request_approval)
+        setContentView(R.layout.activity_travel_cancel_approval)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerTravelRequestApproval = recyclerV_trequest_approval
+        recyclerTravelCancelApproval = recyclerV_tcancel_approval
 
 
 
@@ -29,10 +29,10 @@ class TravelRequestApprovalActivity : AppCompatActivity() {
         listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
             "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
 
-        recyclerTravelRequestApproval.apply {
+        recyclerTravelCancelApproval.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestApprovalAdapter(listItems, this@TravelRequestApprovalActivity,
+            adapter = TRequestApprovalAdapter(listItems, this@TravelCancelApprovalActivity,
                 object : TRequestApprovalAdapter.OnItemClicked {
                     override fun onItemClick(position: Int){
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
@@ -59,4 +59,5 @@ class TravelRequestApprovalActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-}
+    }
+

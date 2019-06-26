@@ -26,13 +26,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
             android:text="Request"
             android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             android:textStyle="normal"
-            android:fontFamily="sans-serif-light"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                         android:maxEms="7"
                         android:text="@string/travel_request"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_travel_request" />
@@ -122,7 +123,7 @@
                         android:autoSizeTextType="uniform"
                         android:text="@string/reimbursement"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         android:fontFamily="sans-serif-condensed-light"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +166,7 @@
                         android:maxEms="7"
                         android:text="@string/travel_booking"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_travel_booking" />
@@ -241,7 +242,7 @@
                         android:maxEms="7"
                         android:text="@string/travel_request_approval"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_travel_request_approval" />
@@ -285,7 +286,7 @@
                         android:maxEms="7"
                         android:text="@string/reimbursement_approval"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_reimbursement_approval" />
@@ -328,7 +329,7 @@
                         android:maxEms="7"
                         android:text="@string/travel_cancel_approval"
                         android:textAlignment="center"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/colorTextBlack"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_travel_cancel_approval" />

@@ -27,19 +27,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:baselineAligned="false"
             android:gravity="center"
             android:orientation="horizontal"
-            android:paddingStart="@dimen/padding_10dp"
-            android:paddingEnd="@dimen/padding_10dp"
+            android:paddingStart="@dimen/padding_12dp"
+            android:paddingEnd="@dimen/padding_12dp"
             android:paddingBottom="@dimen/padding_8dp">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_8dp"
-                android:layout_marginEnd="@dimen/margin_8dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_2dp"
+                android:paddingBottom="@dimen/padding_2dp">
 
                 <TextView
                     android:layout_width="18dp"
@@ -67,7 +68,9 @@
                 android:layout_marginStart="@dimen/margin_8dp"
                 android:layout_marginEnd="@dimen/margin_8dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_2dp"
+                android:paddingBottom="@dimen/padding_2dp">
 
                 <TextView
                     android:layout_width="18dp"
@@ -102,7 +105,7 @@
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:background="@drawable/oval_background_blue"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="3"
                     android:textColor="@color/md_white_1000"
@@ -112,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_4dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Description"
                     android:textColor="@color/colorPrimary"
                     android:textSize="12sp" />
@@ -363,16 +366,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
+                            android:fontFamily="@font/lato_bold"
                             android:text="Start Date"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
-                            android:fontFamily="sans-serif-light"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
                             android:text="Monday, 24 June 2019"
                             android:textColor="@color/colorPrimary"
                             android:textSize="12sp" />
@@ -393,6 +397,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
+                            android:fontFamily="@font/lato_bold"
                             android:text="End Date"
                             android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
@@ -402,7 +407,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
-                            android:fontFamily="sans-serif-light"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
                             android:text="Thursday, 27 June 2019"
                             android:textColor="@color/colorPrimary"
                             android:textSize="12sp" />
@@ -446,6 +452,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
+                            android:fontFamily="@font/lato_bold"
                             android:text="Jakarta"
                             android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
@@ -455,8 +462,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
-                            android:fontFamily="sans-serif-light"
-                            android:text="Depart Date, 23 June 2019"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
+                            android:text="Depart Date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16dp"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
+                            android:text="Sunday, 23 June 2019"
                             android:textColor="@color/colorPrimary"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -476,6 +494,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
+                            android:fontFamily="@font/lato_bold"
                             android:text="Surabaya"
                             android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
@@ -485,34 +504,276 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/margin_16dp"
-                            android:fontFamily="sans-serif-light"
-                            android:text="Return Date, 27 June 2019"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
+                            android:text="Return Date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16dp"
+                            android:layout_marginTop="@dimen/margin_4dp"
+                            android:fontFamily="@font/lato_light"
+                            android:text="Thursday, 27 June 2019"
                             android:textColor="@color/colorPrimary"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:ael_duration="500"
-                app:ael_expanded="false"
-                app:ael_interpolator="bounce"
-                app:ael_orientation="vertical">
+                android:layout_margin="@dimen/margin_8dp"
+                android:background="@drawable/rounded_background_blue_stroke"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
 
-                <TextView
-                    android:id="@+id/text"
+                <RelativeLayout
+                    android:id="@+id/expand_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="sample" />
+                    android:foreground="?selectableItemBackground">
 
-                <TextView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Total"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="28dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="IDR7,660,000"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_expand_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"
+                        android:tint="@color/md_white_1000" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@color/md_white_1000" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout_0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/text"
-                    android:text="sample2" />
-            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    app:el_duration="1000"
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_plane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView_plane"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Plane"
+                                android:textColor="@color/md_white_1000" />
+
+                            <TextView
+                                android:id="@+id/textView_plane_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_plane"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="Jakarta to Surabaya"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_plane"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="IDR1,500,000"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_plane_to"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="Surabaya to Jakarta"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_plane_to"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="IDR1,800,000"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_tarif_penginapan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp">
+
+                            <TextView
+                                android:id="@+id/textView_tarif_penginapan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Tarif Penginapan"
+                                android:textColor="@color/md_white_1000" />
+
+                            <TextView
+                                android:id="@+id/textView_tarif_penginapan_tempat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_tarif_penginapan"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="Surabaya (IDR500,000 x 4 nights)"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_tarif_penginapan"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="IDR2,000,000"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_bantuan_transportasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp">
+
+                            <TextView
+                                android:id="@+id/textView_bantuan_transportasi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Bantuan Transportasi Bandara"
+                                android:textColor="@color/md_white_1000" />
+
+                            <TextView
+                                android:id="@+id/textView_bantuan_transportasi_tempat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_bantuan_transportasi"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="Jakarta"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_bantuan_transportasi"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="IDR360,000"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_tarif_harian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp">
+
+                            <TextView
+                                android:id="@+id/textView_tarif_harian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Tarif Harian"
+                                android:textColor="@color/md_white_1000" />
+
+                            <TextView
+                                android:id="@+id/textView_tarif_harian_tempat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_tarif_harian"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_8dp"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="Surabaya (IDR500,000 x 4 days)"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_tarif_harian"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/margin_4dp"
+                                android:layout_marginEnd="@dimen/margin_8dp"
+                                android:fontFamily="@font/lato_light"
+                                android:text="IDR2,000,000"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button_next"
@@ -525,6 +786,4 @@
                 android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

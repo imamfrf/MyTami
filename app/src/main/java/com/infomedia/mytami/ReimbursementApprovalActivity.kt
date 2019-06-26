@@ -7,33 +7,33 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_travel_request_approval.*
-import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
+import kotlinx.android.synthetic.main.activity_reimbursement_approval.*
+import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
 
-class TravelRequestApprovalActivity : AppCompatActivity() {
-    private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelRequestApproval: RecyclerView
+class ReimbursementApprovalActivity : AppCompatActivity() {
+
+    private lateinit var listItems: ArrayList<ReimbursementRequest>
+    private lateinit var recyclerReimbursementApproval: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel_request_approval)
+        setContentView(R.layout.activity_reimbursement_approval)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerTravelRequestApproval = recyclerV_trequest_approval
+        recyclerReimbursementApproval = recyclerV_reimbursement_approval
 
 
 
         listItems = arrayListOf()
-        listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
+        listItems.add(ReimbursementRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
             "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
 
-        recyclerTravelRequestApproval.apply {
+        recyclerV_reimbursement_approval.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestApprovalAdapter(listItems, this@TravelRequestApprovalActivity,
-                object : TRequestApprovalAdapter.OnItemClicked {
+            adapter = ReimbursementApprovalAdapter(listItems, context,
+                object : ReimbursementApprovalAdapter.OnItemClicked {
                     override fun onItemClick(position: Int){
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
                         val intent = Intent(context, TravelRequestApprovalDetail::class.java)
@@ -59,4 +59,5 @@ class TravelRequestApprovalActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-}
+    }
+

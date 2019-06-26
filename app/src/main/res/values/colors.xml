@@ -10,6 +10,8 @@
     <color name="colorTProgressStatus2">#7FB969</color>
     <color name="colorReimbursementStatus0">#5B6392</color>
 
+    <color name="colorTextBlack">#4A4A4A</color>
+
     <color name="colorTextGrey">#9E9E9E</color>
 
     <!-- google's material design colours from

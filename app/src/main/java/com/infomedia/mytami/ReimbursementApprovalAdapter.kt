@@ -12,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequest>, private val context: Context,
-                              private val mListener: OnItemClicked)
-    : RecyclerView.Adapter<ReimbursementProgressAdapter.ViewHolder>() {
+class ReimbursementApprovalAdapter(private val listItems: List<ReimbursementRequest>, private val context: Context,
+                                   private val mListener: OnItemClicked)
+    : RecyclerView.Adapter<ReimbursementApprovalAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_progress, parent, false)
+            .inflate(R.layout.list_approval, parent, false)
         return ViewHolder(itemView)
     }
 
