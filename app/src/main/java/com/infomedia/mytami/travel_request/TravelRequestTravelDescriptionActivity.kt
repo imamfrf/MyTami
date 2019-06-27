@@ -1,10 +1,11 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.travel_request
 
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.infomedia.mytami.R
 import kotlinx.android.synthetic.main.activity_travel_request_travel_description.*
 import net.cachapa.expandablelayout.ExpandableLayout.OnExpansionUpdateListener
 
@@ -16,6 +17,7 @@ class TravelRequestTravelDescriptionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_travel_request_travel_description)
+
         setSupportActionBar(findViewById(R.id.toolbar))
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
