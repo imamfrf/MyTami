@@ -110,6 +110,7 @@
             android:paddingTop="@dimen/padding_8dp"
             android:paddingEnd="@dimen/padding_8dp"
             android:paddingBottom="@dimen/padding_8dp"
+            android:textColor="@color/colorTextBlack"
             android:textSize="16sp" />
 
         <EditText
@@ -130,6 +131,7 @@
             android:paddingTop="@dimen/padding_8dp"
             android:paddingEnd="@dimen/padding_8dp"
             android:paddingBottom="@dimen/padding_8dp"
+            android:textColor="@color/colorTextBlack"
             android:textSize="16sp" />
     </LinearLayout>
 

@@ -21,9 +21,9 @@ class LoginActivity : AppCompatActivity() {
         ArrayAdapter.createFromResource(
             this,
             R.array.corporates_array,
-            android.R.layout.simple_spinner_item
+            R.layout.spinner_item
         ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            adapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
             spinnerCorporate.adapter = adapter
         }
 
@@ -31,9 +31,9 @@ class LoginActivity : AppCompatActivity() {
         ArrayAdapter.createFromResource(
             this,
             R.array.levels_array,
-            android.R.layout.simple_spinner_item
+            R.layout.spinner_item
         ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            adapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
             spinnerLevel.adapter = adapter
         }
 
