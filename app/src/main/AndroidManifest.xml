@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ReimbursementApprovalActivity"
+            android:label="Reimbursement Approval"></activity>
+        <activity
+            android:name=".TravelCancelApprovalActivity"
+            android:label="Travel Cancel Approval" />
         <activity
             android:name=".TravelRequestApprovalDetail"
             android:label="Meeting Client MCD" />
@@ -27,6 +32,9 @@
             android:name=".TravelRequestTravelTypeActivity"
             android:label="Travel Request"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TravelRequestApprovalActivity"
+            android:label="Travel Request Approval" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

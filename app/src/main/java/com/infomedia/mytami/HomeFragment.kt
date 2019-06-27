@@ -23,6 +23,21 @@ class HomeFragment : androidx.fragment.app.Fragment() {
             startActivity(intent)
         }
 
+        view.cardview_travel_request_approval.setOnClickListener {
+            val intent = Intent(context, TravelRequestApprovalActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.cardview_travel_cancel_approval.setOnClickListener {
+            val intent = Intent(context, TravelCancelApprovalActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.cardview_reimbursement_approval.setOnClickListener {
+            val intent = Intent(context, ReimbursementApprovalActivity::class.java)
+            startActivity(intent)
+        }
+
 
         return view
     }

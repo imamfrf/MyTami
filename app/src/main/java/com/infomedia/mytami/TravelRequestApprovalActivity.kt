@@ -1,28 +1,27 @@
 package com.infomedia.mytami
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_travel_request_approval.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
-
-class TRequestProgressFragment : Fragment() {
-
+class TravelRequestApprovalActivity : AppCompatActivity() {
     private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelRequest: RecyclerView
+    private lateinit var recyclerTravelRequestApproval: RecyclerView
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_travel_request_approval)
 
-        val view: View = inflater!!.inflate(R.layout.fragment_trequest_progress, null)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerTravelRequest = view.recyclerV_tprogress
+        recyclerTravelRequestApproval = recyclerV_trequest_approval
 
 
 
@@ -30,11 +29,11 @@ class TRequestProgressFragment : Fragment() {
         listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
             "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
 
-        recyclerTravelRequest.apply {
+        recyclerTravelRequestApproval.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestProgressAdapter(listItems, context,
-                object : TRequestProgressAdapter.OnItemClicked {
+            adapter = TRequestApprovalAdapter(listItems, this@TravelRequestApprovalActivity,
+                object : TRequestApprovalAdapter.OnItemClicked {
                     override fun onItemClick(position: Int){
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
                         val intent = Intent(context, TravelRequestApprovalDetail::class.java)
@@ -43,17 +42,21 @@ class TRequestProgressFragment : Fragment() {
                 })
         }
 
-        if (listItems.size > 0){
-            activity?.bottom_navigation?.setNotification(" ", 1)
-        }
-        return view
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_reimbursement_progress.view.*
-import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
 class ReimbursementProgressFragment : Fragment() {
     private lateinit var listItems: ArrayList<ReimbursementRequest>
@@ -30,7 +29,7 @@ class ReimbursementProgressFragment : Fragment() {
         recyclerReimbursement.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = ReimbursementProgressAdapter(listItems, this@ReimbursementProgressFragment,
+            adapter = ReimbursementProgressAdapter(listItems, context,
                 object : ReimbursementProgressAdapter.OnItemClicked {
                     override fun onItemClick(position: Int){
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()

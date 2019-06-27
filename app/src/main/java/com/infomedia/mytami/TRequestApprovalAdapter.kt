@@ -6,20 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-
-
-class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequest>, private val context: Context,
+class TRequestApprovalAdapter(private val listItems: List<TravelRequest>, private val context: Context,
                               private val mListener: OnItemClicked)
-    : RecyclerView.Adapter<ReimbursementProgressAdapter.ViewHolder>() {
+    : RecyclerView.Adapter<TRequestApprovalAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_progress, parent, false)
+            .inflate(R.layout.list_approval, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -33,10 +29,6 @@ class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequ
         holder.tvRequestDate?.text = item.requestDate
         holder.tvTravelDate?.text = item.travelDate
         holder.tvDestination?.text = item.origin+"-"+item.destination
-        holder.tvRequestStatus?.text = item.status
-        holder.layoutStatus?.background = ContextCompat.getDrawable(context,
-            R.drawable.rounded_corner_reimbursement_status_0)
-
         holder.cardView?.setOnClickListener{
             mListener.onItemClick(position)
         }
@@ -45,13 +37,11 @@ class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequ
 
     class ViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         // MARK: - Public Properties
-        val cardView: CardView? = itemView?.findViewById(R.id.cardview_progress)
-        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_request_id_progress)
-        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_request_date_progress)
-        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_travel_date_progress)
-        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_destination_progress)
-        val tvRequestStatus: TextView? = itemView?.findViewById(R.id.tv_progress_status)
-        val layoutStatus: ConstraintLayout? = itemView?.findViewById(R.id.layout_progress_status)
+        val cardView: CardView? = itemView?.findViewById(R.id.cardview_approval)
+        val tvRequestId: TextView? = itemView?.findViewById(R.id.tv_request_id_approval)
+        val tvRequestDate: TextView? = itemView?.findViewById(R.id.tv_prequest_date_approval)
+        val tvTravelDate: TextView? = itemView?.findViewById(R.id.tv_travel_date_approval)
+        val tvDestination: TextView? = itemView?.findViewById(R.id.tv_destination_approval)
 
     }
 
@@ -59,4 +49,3 @@ class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequ
         fun onItemClick(position: Int)
     }
 }
-
