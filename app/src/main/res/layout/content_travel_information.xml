@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_4dp"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_12dp"
+    android:paddingBottom="@dimen/padding_8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Travel Information" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_purpose_and_objectives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp">
+
+        <EditText
+            android:id="@+id/editText_purpose_and_objectives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purpose and Objectives"
+            android:inputType="text"
+            android:textColor="@color/colorTextBlack" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp">
+
+        <EditText
+            android:id="@+id/editText_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note"
+            android:inputType="text"
+            android:textColor="@color/colorTextBlack" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

@@ -21,7 +21,7 @@ class TravelRequestTravelTypeActivity : AppCompatActivity() {
         toolbar.navigationIcon?.setColorFilter(resources.getColor(R.color.md_white_1000), PorterDuff.Mode.SRC_ATOP)
 
         button_next.setOnClickListener {
-            val intent = Intent(this, TravelRequsetTravelItineraryActivity::class.java)
+            val intent = Intent(this, TravelRequestTravelItineraryActivity::class.java)
             startActivity(intent)
         }
     }

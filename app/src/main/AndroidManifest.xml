@@ -19,11 +19,13 @@
         <activity
             android:name=".reimbursement.ReimbursementTravelItineraryActivity"
             android:label="Reimbursement"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".reimbursement.ReimbursementTravelTypeActivity"
             android:label="Reimbursement"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ReimbursementApprovalActivity"
             android:label="Reimbursement Approval" />
@@ -38,13 +40,15 @@
             android:label="Travel Request"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".travel_request.TravelRequsetTravelItineraryActivity"
+            android:name=".travel_request.TravelRequestTravelItineraryActivity"
             android:label="Travel Request"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".travel_request.TravelRequestTravelTypeActivity"
             android:label="Travel Request"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".TravelRequestApprovalActivity"
             android:label="Travel Request Approval" />

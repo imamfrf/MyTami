@@ -1,24 +1,23 @@
-package com.infomedia.mytami.reimbursement
+package com.infomedia.mytami.travel_request
 
 import android.content.Intent
 import android.graphics.PorterDuff
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AlphaAnimation
 import android.widget.CheckBox
+import androidx.appcompat.app.AppCompatActivity
 import com.infomedia.mytami.R
-import com.infomedia.mytami.travel_request.TravelRequestTravelDescriptionActivity
 import kotlinx.android.synthetic.main.activity_travel_request_travel_itinerary.*
 import kotlinx.android.synthetic.main.content_others.*
 import kotlinx.android.synthetic.main.content_trip_information.*
 
-class ReimbursementTravelItineraryActivity : AppCompatActivity() {
+class TravelRequestTravelItineraryActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reimbursement_travel_itinerary)
+        setContentView(R.layout.activity_travel_request_travel_itinerary)
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
@@ -27,7 +26,7 @@ class ReimbursementTravelItineraryActivity : AppCompatActivity() {
         toolbar.navigationIcon?.setColorFilter(resources.getColor(R.color.md_white_1000), PorterDuff.Mode.SRC_ATOP)
 
         button_next.setOnClickListener {
-            val intent = Intent(this, ReimbursementTravelDescriptionActivity::class.java)
+            val intent = Intent(this, TravelRequestTravelDescriptionActivity::class.java)
             startActivity(intent)
         }
     }
@@ -87,4 +86,5 @@ class ReimbursementTravelItineraryActivity : AppCompatActivity() {
         view.startAnimation(animate)
         view.visibility = View.VISIBLE
     }
+
 }
