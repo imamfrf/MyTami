@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFEFEF"
-    tools:context=".travel_request.TravelRequestTravelTypeActivity">
+    tools:context=".reimbursement.ReimbursementTravelDescriptionActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -38,7 +38,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_background_white"
                 android:gravity="center"
                 android:paddingTop="@dimen/padding_2dp"
                 android:paddingBottom="@dimen/padding_2dp">
@@ -46,20 +45,20 @@
                 <TextView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:background="@drawable/oval_background_blue"
-                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/oval_background_white"
+                    android:fontFamily="sans-serif-condensed-light"
                     android:gravity="center"
                     android:text="1"
-                    android:textColor="@color/md_white_1000"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_4dp"
-                    android:fontFamily="sans-serif-condensed"
+                    android:fontFamily="sans-serif-condensed-light"
                     android:text="Travel Type"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/md_white_1000"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -97,6 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_background_white"
                 android:gravity="center"
                 android:paddingTop="@dimen/padding_2dp"
                 android:paddingBottom="@dimen/padding_2dp">
@@ -104,20 +104,20 @@
                 <TextView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:background="@drawable/oval_background_white"
-                    android:fontFamily="sans-serif-condensed-light"
+                    android:background="@drawable/oval_background_blue"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="3"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/md_white_1000"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_4dp"
-                    android:fontFamily="sans-serif-condensed-light"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Description"
-                    android:textColor="@color/md_white_1000"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
@@ -137,48 +137,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/md_white_1000"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingStart="0dp"
-                android:paddingTop="@dimen/padding_10dp"
-                android:paddingEnd="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_4dp">
+            <include layout="@layout/content_request_detail" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/padding_16dp"
-                    android:src="@drawable/ic_id_travel_27px" />
+            <include layout="@layout/content_travel_information_description" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/textInputLayout_travel_id"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+            <include layout="@layout/content_event_detail" />
 
-                    <EditText
-                        android:id="@+id/editText_travel_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:editable="false"
-                        android:enabled="false"
-                        android:hint="Travel ID"
-                        android:inputType="text"
-                        android:text="TEL12345678"
-                        android:textStyle="bold" />
+            <include layout="@layout/content_trip_detail" />
 
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
+            <include layout="@layout/content_flight_fare" />
 
-            <include layout="@layout/content_employee_information" />
+            <include layout="@layout/content_hotel_cost" />
 
-            <include layout="@layout/content_travel_information" />
-
-            <include layout="@layout/content_document_sppd" />
+            <include layout="@layout/content_cost_detail" />
 
             <Button
                 android:id="@+id/button_next"
@@ -191,6 +162,4 @@
                 android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

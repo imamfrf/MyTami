@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    android:background="@drawable/rounded_background_blue_stroke"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16dp">
+
+    <RelativeLayout
+        android:id="@+id/expand_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="Total"
+            android:textColor="@color/md_white_1000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="IDR7,660,000"
+            android:textColor="@color/md_white_1000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView_expand_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"
+            android:tint="@color/md_white_1000" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/md_white_1000" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        app:el_duration="1000"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_plane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_plane"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Plane"
+                    android:textColor="@color/md_white_1000" />
+
+                <TextView
+                    android:id="@+id/textView_plane_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_plane"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="Jakarta to Surabaya"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_plane"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="IDR1,500,000"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_plane_to"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="Surabaya to Jakarta"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_plane_to"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="IDR1,800,000"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_tarif_penginapan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp">
+
+                <TextView
+                    android:id="@+id/textView_tarif_penginapan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Tarif Penginapan"
+                    android:textColor="@color/md_white_1000" />
+
+                <TextView
+                    android:id="@+id/textView_tarif_penginapan_tempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_tarif_penginapan"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="Surabaya (IDR500,000 x 4 nights)"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_tarif_penginapan"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="IDR2,000,000"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_bantuan_transportasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp">
+
+                <TextView
+                    android:id="@+id/textView_bantuan_transportasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Bantuan Transportasi Bandara"
+                    android:textColor="@color/md_white_1000" />
+
+                <TextView
+                    android:id="@+id/textView_bantuan_transportasi_tempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_bantuan_transportasi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="Jakarta"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_bantuan_transportasi"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="IDR360,000"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_tarif_harian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp">
+
+                <TextView
+                    android:id="@+id/textView_tarif_harian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Tarif Harian"
+                    android:textColor="@color/md_white_1000" />
+
+                <TextView
+                    android:id="@+id/textView_tarif_harian_tempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_tarif_harian"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="Surabaya (IDR500,000 x 4 days)"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_tarif_harian"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:fontFamily="@font/lato_light"
+                    android:text="IDR2,000,000"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

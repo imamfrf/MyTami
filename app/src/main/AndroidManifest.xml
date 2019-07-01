@@ -12,8 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ReimbursementApprovalActivity"
-            android:label="Reimbursement Approval"></activity>
+        <activity
+            android:name=".reimbursement.ReimbursementTravelDescriptionActivity"
+            android:label="Reimbursement"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".reimbursement.ReimbursementTravelItineraryActivity"
+            android:label="Reimbursement"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".reimbursement.ReimbursementTravelTypeActivity"
+            android:label="Reimbursement"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReimbursementApprovalActivity"
+            android:label="Reimbursement Approval" />
         <activity
             android:name=".TravelCancelApprovalActivity"
             android:label="Travel Cancel Approval" />
@@ -21,17 +36,19 @@
             android:name=".TravelRequestApprovalDetail"
             android:label="Meeting Client MCD" />
         <activity
-            android:name=".TravelRequestTravelDescriptionActivity"
-            android:label="Travel Description"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TravelRequsetTravelItineraryActivity"
-            android:label="Travel Itinerary"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TravelRequestTravelTypeActivity"
+            android:name=".travel_request.TravelRequestTravelDescriptionActivity"
             android:label="Travel Request"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".travel_request.TravelRequestTravelItineraryActivity"
+            android:label="Travel Request"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".travel_request.TravelRequestTravelTypeActivity"
+            android:label="Travel Request"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".TravelRequestApprovalActivity"
             android:label="Travel Request Approval" />

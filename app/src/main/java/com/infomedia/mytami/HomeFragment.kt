@@ -1,14 +1,12 @@
 package com.infomedia.mytami
 
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_home.*
+import com.infomedia.mytami.reimbursement.ReimbursementTravelTypeActivity
+import com.infomedia.mytami.travel_request.TravelRequestTravelTypeActivity
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
@@ -20,6 +18,11 @@ class HomeFragment : androidx.fragment.app.Fragment() {
 
         view.cardview_travel_request.setOnClickListener {
             val intent = Intent(context, TravelRequestTravelTypeActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.cardview_reimbursement.setOnClickListener {
+            val intent = Intent(context, ReimbursementTravelTypeActivity::class.java)
             startActivity(intent)
         }
 

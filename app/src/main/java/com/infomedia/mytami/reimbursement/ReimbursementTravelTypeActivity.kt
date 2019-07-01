@@ -1,17 +1,19 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.reimbursement
 
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.infomedia.mytami.R
 import kotlinx.android.synthetic.main.activity_travel_request_travel_type.*
 
-class TravelRequestTravelTypeActivity : AppCompatActivity() {
+class ReimbursementTravelTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel_request_travel_type)
+        setContentView(R.layout.activity_reimbursement_travel_type)
+
         setSupportActionBar(findViewById(R.id.toolbar))
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -19,7 +21,7 @@ class TravelRequestTravelTypeActivity : AppCompatActivity() {
         toolbar.navigationIcon?.setColorFilter(resources.getColor(R.color.md_white_1000), PorterDuff.Mode.SRC_ATOP)
 
         button_next.setOnClickListener {
-            val intent = Intent(this, TravelRequsetTravelItineraryActivity::class.java)
+            val intent = Intent(this, ReimbursementTravelItineraryActivity::class.java)
             startActivity(intent)
         }
     }
