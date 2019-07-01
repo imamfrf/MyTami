@@ -233,6 +233,20 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+
+                    <TextView
+                        android:id="@+id/tv_notif_trequest_approval"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="visible"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/rounded_corner_notification_badge"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/md_white_1000"
+                        app:layout_constraintEnd_toEndOf="@id/img_travel_request_approval"
+                        app:layout_constraintTop_toTopOf="@id/img_travel_request_approval" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -278,6 +292,19 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/tv_notif_reimbursement_approval"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/rounded_corner_notification_badge"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/md_white_1000"
+                        app:layout_constraintEnd_toEndOf="@id/img_reimbursement_approval"
+                        app:layout_constraintTop_toTopOf="@id/img_reimbursement_approval" />
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -319,6 +346,19 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_notif_tcancel_approval"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/rounded_corner_notification_badge"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/md_white_1000"
+                        app:layout_constraintEnd_toEndOf="@id/img_travel_cancel_approval"
+                        app:layout_constraintTop_toTopOf="@id/img_travel_cancel_approval" />
 
                     <TextView
                         android:layout_width="wrap_content"

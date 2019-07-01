@@ -6,11 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_travel_request_travel_description.*
-import net.cachapa.expandablelayout.ExpandableLayout
 import net.cachapa.expandablelayout.ExpandableLayout.OnExpansionUpdateListener
-import androidx.core.view.ViewCompat.animate
-import android.R.attr.rotation
-import android.R.attr.start
+
 
 
 class TravelRequestTravelDescriptionActivity : AppCompatActivity() {
