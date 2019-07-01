@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/flight_reservation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_booking_flight"
+                style="@style/AppTheme.RoundedCornerMaterialButtonGreenSolid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/margin_4dp"
+                android:layout_weight="1"
+                android:text="@string/booking"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_reimbursement_flight"
+                style="@style/AppTheme.RoundedCornerMaterialButtonRedSolid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_4dp"
+                android:layout_weight="1"
+                android:text="@string/reimbursement"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/hotel_reservation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_booking_hotel"
+                style="@style/AppTheme.RoundedCornerMaterialButtonGreenSolid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/margin_4dp"
+                android:layout_weight="1"
+                android:text="@string/booking"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_reimbursement_hotel"
+                style="@style/AppTheme.RoundedCornerMaterialButtonRedSolid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/margin_4dp"
+                android:layout_weight="1"
+                android:text="@string/reimbursement"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

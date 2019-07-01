@@ -13,6 +13,15 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".travel_request.TravelBookingActivity"
+            android:label="Meeting Client Telkomsel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".reimbursement.ReimbursementTravelDescriptionActivity"
             android:label="Reimbursement"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -53,11 +62,6 @@
             android:name=".TravelRequestApprovalActivity"
             android:label="Travel Request Approval" />
         <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

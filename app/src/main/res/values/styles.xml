@@ -16,6 +16,14 @@
         <item name="android:background">@drawable/button_rounded_red</item>
     </style>
 
+    <style name="AppTheme.RoundedCornerMaterialButtonRedSolid" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_rounded_red_solid</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButtonGreenSolid" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_rounded_green_solid</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

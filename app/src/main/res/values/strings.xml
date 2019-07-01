@@ -16,6 +16,11 @@
     <string name="change_password">Change Password</string>
     <string name="help">Help</string>
     <string name="logout">Logout</string>
+    <string name="flight_reservation">Flight Reservation</string>
+    <string name="booking">Booking</string>
+    <string name="hotel_reservation">Hotel Reservation</string>
+    <string name="travel_request_approved_waiting_for_booking">Travel Request Approved. Waiting for Booking</string>
+    <string name="cancel">Cancel</string>
 
     <string-array name="corporates_array">
         <item>BKI</item>

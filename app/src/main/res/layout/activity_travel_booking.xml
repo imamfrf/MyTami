@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EFEFEF"
+    tools:context=".travel_request.TravelBookingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/content_progress_status" />
+
+            <include layout="@layout/content_request_detail" />
+
+            <include layout="@layout/content_travel_information_description" />
+
+            <include layout="@layout/content_event_detail" />
+
+            <include layout="@layout/content_trip_detail" />
+
+            <include layout="@layout/content_flight_hotel_reservation" />
+
+            <Button
+                android:id="@+id/button_next"
+                style="@style/AppTheme.RoundedCornerMaterialButtonRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
