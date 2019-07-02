@@ -94,6 +94,7 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/editText_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_22dp"
@@ -114,6 +115,7 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/editText_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_22dp"

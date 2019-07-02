@@ -16,6 +16,9 @@
     <string name="change_password">Change Password</string>
     <string name="help">Help</string>
     <string name="logout">Logout</string>
+    <string name="login_failed">Login gagal! Mohon cek kembali corporate/user/password anda, atau ulangi beberapa saat lagi</string>
+    <string name="login_username_empty">Username harus diisi!</string>
+    <string name="login_password_empty">Password harus diisi!</string>
 
     <string-array name="corporates_array">
         <item>BKI</item>

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.model.ReimbursementRequest
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_reimbursement_progress.view.*
 
@@ -23,8 +24,12 @@ class ReimbursementProgressFragment : Fragment() {
 
 
         listItems = arrayListOf()
-        listItems.add(ReimbursementRequest("TEL999999", "Meeting PT Telkom", "20 June 2019",
-            "15 January 2019", "Jakarta", "Balikpapan", getString(R.string.reimbursement_status_0)))
+        listItems.add(
+            ReimbursementRequest(
+                "TEL999999", "Meeting PT Telkom", "20 June 2019",
+                "15 January 2019", "Jakarta", "Balikpapan", getString(R.string.reimbursement_status_0)
+            )
+        )
 
         recyclerReimbursement.apply {
             layoutManager = getReverseLinearLayoutManager()
@@ -45,7 +50,7 @@ class ReimbursementProgressFragment : Fragment() {
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }

@@ -107,6 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:clickable="true"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -139,6 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:clickable="true"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -171,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:clickable="true"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -200,9 +203,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:clickable="true"
             android:background="@color/md_white_1000">
 
             <TextView
