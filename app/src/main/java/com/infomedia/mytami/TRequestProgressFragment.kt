@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.model.TravelRequest
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
@@ -27,8 +28,12 @@ class TRequestProgressFragment : Fragment() {
 
 
         listItems = arrayListOf()
-        listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
-            "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
+        listItems.add(
+            TravelRequest(
+                "TEL17774444", "Meeting Client BRI", "20 June 2019",
+                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
+            )
+        )
 
         recyclerTravelRequest.apply {
             layoutManager = getReverseLinearLayoutManager()
@@ -50,7 +55,7 @@ class TRequestProgressFragment : Fragment() {
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }

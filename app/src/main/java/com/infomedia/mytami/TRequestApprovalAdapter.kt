@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.model.TravelRequest
 
 class TRequestApprovalAdapter(private val listItems: List<TravelRequest>, private val context: Context,
                               private val mListener: OnItemClicked)
@@ -26,8 +27,8 @@ class TRequestApprovalAdapter(private val listItems: List<TravelRequest>, privat
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = listItems[position]
         holder.tvRequestId?.text = item.id+"-"+item.title
-        holder.tvRequestDate?.text = item.requestDate
-        holder.tvTravelDate?.text = item.travelDate
+        holder.tvRequestDate?.text = "Request date : "+item.requestDate
+        holder.tvTravelDate?.text = "Travel date : "+item.travelDate
         holder.tvDestination?.text = item.origin+"-"+item.destination
         holder.cardView?.setOnClickListener{
             mListener.onItemClick(position)

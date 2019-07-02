@@ -7,8 +7,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.model.TravelRequest
 import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
-import kotlinx.android.synthetic.main.activity_travel_request_approval.*
 
 class TravelCancelApprovalActivity : AppCompatActivity() {
 
@@ -26,8 +26,12 @@ class TravelCancelApprovalActivity : AppCompatActivity() {
 
 
         listItems = arrayListOf()
-        listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
-            "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
+        listItems.add(
+            TravelRequest(
+                "TEL17774444", "Meeting Client BRI", "20 June 2019",
+                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
+            )
+        )
 
         recyclerTravelCancelApproval.apply {
             layoutManager = getReverseLinearLayoutManager()
@@ -45,7 +49,7 @@ class TravelCancelApprovalActivity : AppCompatActivity() {
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, RecyclerView.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }

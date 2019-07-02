@@ -11,6 +11,7 @@
         android:id="@+id/cardview_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="true"
         app:cardUseCompatPadding="true">
 
 

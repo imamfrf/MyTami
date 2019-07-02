@@ -7,9 +7,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import com.infomedia.mytami.model.TravelRequest
 import kotlinx.android.synthetic.main.activity_travel_request_approval.*
-import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
 class TravelRequestApprovalActivity : AppCompatActivity() {
     private lateinit var listItems: ArrayList<TravelRequest>
@@ -26,8 +25,12 @@ class TravelRequestApprovalActivity : AppCompatActivity() {
 
 
         listItems = arrayListOf()
-        listItems.add(TravelRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
-            "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
+        listItems.add(
+            TravelRequest(
+                "TEL17774444", "Meeting Client BRI", "20 June 2019",
+                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
+            )
+        )
 
         recyclerTravelRequestApproval.apply {
             layoutManager = getReverseLinearLayoutManager()
@@ -45,7 +48,7 @@ class TravelRequestApprovalActivity : AppCompatActivity() {
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, RecyclerView.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }

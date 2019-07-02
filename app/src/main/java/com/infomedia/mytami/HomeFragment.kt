@@ -15,7 +15,6 @@ class HomeFragment : androidx.fragment.app.Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_home, null)
-
         view.cardview_travel_request.setOnClickListener {
             val intent = Intent(context, TravelRequestTravelTypeActivity::class.java)
             startActivity(intent)

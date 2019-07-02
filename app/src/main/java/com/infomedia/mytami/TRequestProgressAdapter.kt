@@ -9,7 +9,7 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-
+import com.infomedia.mytami.model.TravelRequest
 
 
 class TRequestProgressAdapter(private val listItems: List<TravelRequest>, private val context: Context,
@@ -30,8 +30,8 @@ class TRequestProgressAdapter(private val listItems: List<TravelRequest>, privat
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        val item = listItems[position]
         holder.tvRequestId?.text = item.id+"-"+item.title
-        holder.tvRequestDate?.text = item.requestDate
-        holder.tvTravelDate?.text = item.travelDate
+        holder.tvRequestDate?.text = "Request date : "+item.requestDate
+        holder.tvTravelDate?.text = "Travel date : "+item.travelDate
         holder.tvDestination?.text = item.origin+"-"+item.destination
         holder.tvRequestStatus?.text = item.status
 

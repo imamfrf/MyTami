@@ -7,8 +7,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.model.ReimbursementRequest
 import kotlinx.android.synthetic.main.activity_reimbursement_approval.*
-import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
 
 class ReimbursementApprovalActivity : AppCompatActivity() {
 
@@ -26,8 +26,12 @@ class ReimbursementApprovalActivity : AppCompatActivity() {
 
 
         listItems = arrayListOf()
-        listItems.add(ReimbursementRequest("TEL17774444", "Meeting Client BRI", "20 June 2019",
-            "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)))
+        listItems.add(
+            ReimbursementRequest(
+                "TEL17774444", "Meeting Client BRI", "20 June 2019",
+                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
+            )
+        )
 
         recyclerV_reimbursement_approval.apply {
             layoutManager = getReverseLinearLayoutManager()
