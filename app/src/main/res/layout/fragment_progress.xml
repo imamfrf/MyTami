@@ -14,7 +14,7 @@
         app:layout_collapseMode="pin"
         app:tabBackground="@drawable/tab_background_color_selector"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorColor="@color/colorPrimary"
         app:tabSelectedTextColor="@color/md_black_1000"
         app:tabTextColor="@color/md_grey_500" />
 

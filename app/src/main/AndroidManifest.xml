@@ -17,11 +17,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".flight_reservation.FlightReservationActivity"
             android:label="Flight Reservation">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".reimbursement.ReimbursementTravelDescriptionActivity"
@@ -64,7 +60,11 @@
             android:name=".TravelRequestApprovalActivity"
             android:label="Travel Request Approval" />
         <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

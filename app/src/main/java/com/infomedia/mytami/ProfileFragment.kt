@@ -26,7 +26,9 @@ class ProfileFragment : Fragment() {
 
         view.btn_logout.setOnClickListener {
             SharedPrefManager(context!!).getInstance(context!!).logout()
+            activity!!.finish()
         }
+
 
         return view
     }

@@ -91,5 +91,6 @@ class SharedPrefManager(val context: Context) {
         editor.clear()
         editor.apply()
         context.startActivity(Intent(context, LoginActivity::class.java))
+
     }
 }
