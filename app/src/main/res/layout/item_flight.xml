@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/md_white_1000"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="20dp"
+            android:drawableTop="@drawable/img_airline_air_asia"
+            android:drawablePadding="4dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/lato_regular"
+            android:singleLine="true"
+            android:text="QZ-123"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_view_airline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/lato_regular"
+                android:text="Air Asia"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_view_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="IDR500,000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="86dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="#C7CFD8" />
+
+            <TextView
+                android:id="@+id/text_view_estimated_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/divider"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lato_regular"
+                android:text="1h 10m"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/text_view_transit_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lato_regular"
+                android:text="Direct"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/text_view_departure_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="04:30"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_view_arrival_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="06:00"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_view_departure_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/text_view_departure_time"
+                android:layout_alignEnd="@id/text_view_departure_time"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:text="CGK"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_view_arrival_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/text_view_arrival_time"
+                android:layout_alignEnd="@id/text_view_arrival_time"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:text="SUB"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
