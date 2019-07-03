@@ -108,6 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -141,6 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -174,6 +178,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:background="@color/md_white_1000">
 
             <TextView
@@ -208,6 +214,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:background="@color/md_white_1000">
 
             <TextView

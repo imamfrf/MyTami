@@ -52,7 +52,9 @@
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_weight="1"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -95,7 +97,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -172,7 +177,10 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -230,7 +238,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -286,7 +297,10 @@
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
