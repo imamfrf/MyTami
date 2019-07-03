@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_4dp"
+    android:background="@color/md_white_1000"
+    android:paddingTop="@dimen/padding_12dp"
+    android:paddingBottom="@dimen/padding_12dp">
+
+    <TextView
+        android:id="@+id/text_view_flight_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Flight Information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/text_view_flight_information"
+        app:layout_constraintStart_toStartOf="@id/text_view_flight_information"
+        app:layout_constraintTop_toBottomOf="@id/text_view_flight_information"
+        tools:listitem="@layout/item_flight_detail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

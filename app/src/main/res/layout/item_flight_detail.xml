@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view_airline"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_airline_garuda_indonesia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/text_view_airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/lato_light"
+        android:text="Garuda Indonesia "
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_airline"
+        app:layout_constraintStart_toEndOf="@id/image_view_airline"
+        app:layout_constraintTop_toTopOf="@id/image_view_airline" />
+
+    <TextView
+        android:id="@id/text_view_flight_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="GA-242"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_airline"
+        app:layout_constraintStart_toEndOf="@id/text_view_airline"
+        app:layout_constraintTop_toTopOf="@id/image_view_airline" />
+
+    <ImageView
+        android:id="@+id/image_view_dot_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_dot_18px"
+        app:layout_constraintStart_toStartOf="@id/image_view_airline"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_airline" />
+
+    <TextView
+        android:id="@+id/text_view_departure_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Jakarta "
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"
+        app:layout_constraintStart_toEndOf="@id/image_view_dot_start" />
+
+    <TextView
+        android:id="@+id/text_view_departure_airport_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="(CGK)"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"
+        app:layout_constraintStart_toEndOf="@id/text_view_departure_city" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="05:10, 15 Jul 2019"
+        android:textColor="@color/colorTextBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soekarno-Hatta International Airport"
+        android:textColor="@color/colorTextGrey"
+        app:layout_constraintStart_toStartOf="@id/text_view_departure_city"
+        app:layout_constraintTop_toBottomOf="@id/text_view_departure_city" />
+
+    <ImageView
+        android:id="@+id/image_view_dot_line"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@id/image_view_dot_start"
+        app:layout_constraintStart_toStartOf="@id/image_view_dot_start"
+        app:layout_constraintTop_toBottomOf="@id/image_view_dot_start" />
+
+    <ImageView
+        android:id="@+id/image_view_dot_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dot_18px"
+        app:layout_constraintStart_toStartOf="@id/image_view_airline"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_dot_line" />
+
+    <TextView
+        android:id="@+id/text_view_arrival_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Surabaya "
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"
+        app:layout_constraintStart_toEndOf="@id/image_view_dot_end" />
+
+    <TextView
+        android:id="@+id/text_view_arrival_airport_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="(SUB)"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"
+        app:layout_constraintStart_toEndOf="@id/text_view_arrival_city" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="07:15, 15 Jul 2019"
+        android:textColor="@color/colorTextBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_arrival_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juanda International Airport"
+        android:textColor="@color/colorTextGrey"
+        app:layout_constraintStart_toStartOf="@id/text_view_arrival_city"
+        app:layout_constraintTop_toBottomOf="@id/text_view_arrival_city" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="24dp"
+        android:background="#C7CFD8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_arrival_airport" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Connection time 1h 15m"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
