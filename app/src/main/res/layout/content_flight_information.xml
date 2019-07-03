@@ -29,6 +29,29 @@
         app:layout_constraintEnd_toEndOf="@id/text_view_flight_information"
         app:layout_constraintStart_toStartOf="@id/text_view_flight_information"
         app:layout_constraintTop_toBottomOf="@id/text_view_flight_information"
-        tools:listitem="@layout/item_flight_detail" />
+        tools:listitem="@layout/item_flight_detail"/>
+
+    <TextView
+        android:id="@+id/text_view_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="IDR1,800,000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+    <TextView
+        android:id="@+id/text_view_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="Economy"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_price" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

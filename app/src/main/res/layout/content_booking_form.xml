@@ -60,14 +60,16 @@
                 android:id="@+id/radio_button_mr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mr" />
+                android:text="Mr"
+                android:textColor="@color/colorTextBlack" />
 
             <RadioButton
                 android:id="@+id/radio_button_mrs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
-                android:text="Mrs" />
+                android:text="Mrs"
+                android:textColor="@color/colorTextBlack" />
         </RadioGroup>
     </LinearLayout>
 

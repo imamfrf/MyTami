@@ -24,7 +24,7 @@
         android:layout_marginStart="@dimen/margin_12dp"
         android:onClick="onCheckboxClicked"
         android:text="Other Cost Center (Khusus kegiatan training menggunakan Cost Center HC)"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorTextBlack" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout_cost_center"
@@ -54,7 +54,7 @@
         android:layout_marginTop="@dimen/margin_8dp"
         android:onClick="onCheckboxClicked"
         android:text="Diskresi (Dipilih apabila karyawan membutuhkan fasilitas diluar limit ketentuan perusahaan)"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorTextBlack" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout_diskresi_type"
@@ -102,5 +102,5 @@
         android:layout_marginStart="@dimen/margin_12dp"
         android:layout_marginTop="@dimen/margin_8dp"
         android:text="Makan malam ditanggung (Dipilih apabila mendapatkan fasilitas)"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorTextBlack" />
 </LinearLayout>

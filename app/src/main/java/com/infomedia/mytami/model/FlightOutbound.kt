@@ -9,7 +9,6 @@ data class FlightOutbound(
     val arrivalCity: String?,
     val arrivalAirport: String?,
     val arrivalTime: String?,
-    val estimatedTime: String?,
     val transitInformation: String?
 ) {
 

@@ -21,12 +21,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12dp"
         android:text="Hotel"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorTextBlack" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12dp"
         android:text="Additional Transportation"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorTextBlack" />
 </LinearLayout>

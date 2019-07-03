@@ -57,17 +57,18 @@
         app:layout_constraintStart_toEndOf="@id/image_view_dot_start" />
 
     <!--<TextView-->
-        <!--android:id="@+id/text_view_departure_airport_code"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:fontFamily="@font/lato_bold"-->
-        <!--android:text="(CGK)"-->
-        <!--android:textColor="@color/colorTextBlack"-->
-        <!--android:textSize="16sp"-->
-        <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"-->
-        <!--app:layout_constraintStart_toEndOf="@id/text_view_departure_city" />-->
+    <!--android:id="@+id/text_view_departure_airport_code"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="@font/lato_bold"-->
+    <!--android:text="(CGK)"-->
+    <!--android:textColor="@color/colorTextBlack"-->
+    <!--android:textSize="16sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"-->
+    <!--app:layout_constraintStart_toEndOf="@id/text_view_departure_city" />-->
 
     <TextView
+        android:id="@+id/text_view_departure_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
@@ -78,6 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+        android:id="@+id/text_view_departure_airport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_regular"
@@ -118,17 +120,18 @@
         app:layout_constraintStart_toEndOf="@id/image_view_dot_end" />
 
     <!--<TextView-->
-        <!--android:id="@+id/text_view_arrival_airport_code"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:fontFamily="@font/lato_bold"-->
-        <!--android:text="(SUB)"-->
-        <!--android:textColor="@color/colorTextBlack"-->
-        <!--android:textSize="16sp"-->
-        <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"-->
-        <!--app:layout_constraintStart_toEndOf="@id/text_view_arrival_city" />-->
+    <!--android:id="@+id/text_view_arrival_airport_code"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="@font/lato_bold"-->
+    <!--android:text="(SUB)"-->
+    <!--android:textColor="@color/colorTextBlack"-->
+    <!--android:textSize="16sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"-->
+    <!--app:layout_constraintStart_toEndOf="@id/text_view_arrival_city" />-->
 
     <TextView
+        android:id="@+id/text_view_arrival_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
@@ -160,6 +163,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_view_arrival_airport" />
 
     <TextView
+        android:id="@+id/text_view_transit_information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/md_white_1000"
