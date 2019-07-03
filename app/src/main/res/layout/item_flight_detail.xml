@@ -50,22 +50,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Jakarta "
+        android:text="Jakarta (CGK)"
         android:textColor="@color/colorTextBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"
         app:layout_constraintStart_toEndOf="@id/image_view_dot_start" />
 
-    <TextView
-        android:id="@+id/text_view_departure_airport_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="(CGK)"
-        android:textColor="@color/colorTextBlack"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"
-        app:layout_constraintStart_toEndOf="@id/text_view_departure_city" />
+    <!--<TextView-->
+        <!--android:id="@+id/text_view_departure_airport_code"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fontFamily="@font/lato_bold"-->
+        <!--android:text="(CGK)"-->
+        <!--android:textColor="@color/colorTextBlack"-->
+        <!--android:textSize="16sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_start"-->
+        <!--app:layout_constraintStart_toEndOf="@id/text_view_departure_city" />-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,6 +80,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
         android:text="Soekarno-Hatta International Airport"
         android:textColor="@color/colorTextGrey"
         app:layout_constraintStart_toStartOf="@id/text_view_departure_city"
@@ -110,22 +111,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Surabaya "
+        android:text="Surabaya (SUB)"
         android:textColor="@color/colorTextBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"
         app:layout_constraintStart_toEndOf="@id/image_view_dot_end" />
 
-    <TextView
-        android:id="@+id/text_view_arrival_airport_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="(SUB)"
-        android:textColor="@color/colorTextBlack"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"
-        app:layout_constraintStart_toEndOf="@id/text_view_arrival_city" />
+    <!--<TextView-->
+        <!--android:id="@+id/text_view_arrival_airport_code"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fontFamily="@font/lato_bold"-->
+        <!--android:text="(SUB)"-->
+        <!--android:textColor="@color/colorTextBlack"-->
+        <!--android:textSize="16sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/image_view_dot_end"-->
+        <!--app:layout_constraintStart_toEndOf="@id/text_view_arrival_city" />-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -141,6 +142,7 @@
         android:id="@+id/text_view_arrival_airport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
         android:text="Juanda International Airport"
         android:textColor="@color/colorTextGrey"
         app:layout_constraintStart_toStartOf="@id/text_view_arrival_city"

@@ -10,11 +10,11 @@
     </style>
 
     <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
-        <item name="android:background">@drawable/button_rounded_gradient</item>
+        <item name="android:background">@drawable/button_rounded_gradient_green</item>
     </style>
 
     <style name="AppTheme.RoundedCornerMaterialButtonRed" parent="Widget.AppCompat.Button.Colored">
-        <item name="android:background">@drawable/button_rounded_red</item>
+        <item name="android:background">@drawable/button_rounded_gradient_red</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

@@ -35,10 +35,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
-                android:fontFamily="@font/lato_bold"
+                android:fontFamily="@font/lato_regular"
                 android:text="Start Date"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView_event_start_date"
@@ -46,10 +46,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginTop="@dimen/margin_4dp"
-                android:fontFamily="@font/lato_light"
-                android:text="Monday, 24 June 2019"
+                android:fontFamily="@font/lato_bold"
+                android:text="Mon, 24 June 2019"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <ImageView
@@ -67,11 +67,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
-                android:fontFamily="@font/lato_bold"
+                android:fontFamily="@font/lato_regular"
                 android:text="End Date"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView_event_end_date"
@@ -79,10 +78,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginTop="@dimen/margin_4dp"
-                android:fontFamily="@font/lato_light"
-                android:text="Thursday, 27 June 2019"
+                android:fontFamily="@font/lato_bold"
+                android:text="Thu, 27 June 2019"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

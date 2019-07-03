@@ -19,6 +19,11 @@
     <string name="login_failed">Login gagal! Mohon cek kembali corporate/user/password anda, atau ulangi beberapa saat lagi</string>
     <string name="login_username_empty">Username harus diisi!</string>
     <string name="login_password_empty">Password harus diisi!</string>
+    <string name="flight_reservation">Flight Reservation</string>
+    <string name="booking">Booking</string>
+    <string name="hotel_reservation">Hotel Reservation</string>
+    <string name="travel_request_approved_waiting_for_booking">Travel Request Approved. Waiting for Booking</string>
+    <string name="cancel">Cancel</string>
 
     <string-array name="corporates_array">
         <item>BKI</item>
