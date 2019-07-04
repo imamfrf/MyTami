@@ -20,6 +20,7 @@
             android:text="@string/flight_reservation" />
 
         <LinearLayout
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16dp"
@@ -31,26 +32,25 @@
             <Button
                 android:id="@+id/button_booking_flight"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="@dimen/margin_4dp"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_rounded_gradient_green"
-                android:backgroundTint="#6EBC79"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/booking"
                 android:textAllCaps="false"
                 android:textColor="@color/md_white_1000"
                 android:textSize="16sp" />
 
             <Button
+                android:layout_marginStart="8dp"
                 android:id="@+id/button_reimbursement_flight"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="@dimen/margin_4dp"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_rounded_gradient_green"
-                android:backgroundTint="#ED4337"
+                android:backgroundTint="#F59C1A"
                 android:text="@string/reimbursement"
                 android:textAllCaps="false"
                 android:textColor="@color/md_white_1000"
@@ -74,6 +74,7 @@
             android:text="@string/hotel_reservation" />
 
         <LinearLayout
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16dp"
@@ -85,26 +86,25 @@
             <Button
                 android:id="@+id/button_booking_hotel"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginEnd="@dimen/margin_4dp"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_rounded_gradient_green"
-                android:backgroundTint="#6EBC79"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/booking"
                 android:textAllCaps="false"
                 android:textColor="@color/md_white_1000"
                 android:textSize="16sp" />
 
             <Button
+                android:layout_marginStart="8dp"
                 android:id="@+id/button_reimbursement_hotel"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="@dimen/margin_4dp"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_rounded_gradient_green"
-                android:backgroundTint="#ED4337"
+                android:backgroundTint="#F59C1A"
                 android:text="@string/reimbursement"
                 android:textAllCaps="false"
                 android:textColor="@color/md_white_1000"

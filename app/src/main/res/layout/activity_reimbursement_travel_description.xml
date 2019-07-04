@@ -152,12 +152,12 @@
             <include layout="@layout/content_cost_detail" />
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_submit"
                 style="@style/AppTheme.RoundedCornerMaterialButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_10dp"
-                android:text="Next"
+                android:text="Submit"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
         </LinearLayout>

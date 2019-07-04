@@ -1,5 +1,6 @@
 package com.infomedia.mytami.flight_reservation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -84,6 +85,8 @@ class FlightReservationActivity : AppCompatActivity(),
 
     override fun onItemClick(id: String) {
         toast("item clicked:$id")
+        val intent = Intent(this, FlightConfirmationActivity::class.java)
+        startActivity(intent)
     }
 
 }

@@ -146,7 +146,7 @@
             <include layout="@layout/content_others" />
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_submit"
                 style="@style/AppTheme.RoundedCornerMaterialButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

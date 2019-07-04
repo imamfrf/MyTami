@@ -18,13 +18,7 @@
         <activity android:name=".hotel_reservation.ChooseRoomActivity" />
         <activity
             android:name=".travel_request.RoomDetailActivity"
-            android:label="Superior Twin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="Superior Twin" />
         <activity
             android:name=".flight_reservation.FlightConfirmationActivity"
             android:label="Confirmation"
@@ -33,11 +27,17 @@
             android:name=".flight_reservation.FlightReservationActivity"
             android:label="Flight Reservation" />
         <activity
+            android:name=".travel_request.TravelBookingActivity"
+            android:label="Travel Booking">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".travel_request.HotelDetailActivity"
             android:label="Best Western Papilio Hotel" />
-        <activity
-            android:name=".travel_request.TravelBookingActivity"
-            android:label="Meeting Client Telkomsel" />
         <activity
             android:name=".reimbursement.ReimbursementTravelDescriptionActivity"
             android:label="Reimbursement"
