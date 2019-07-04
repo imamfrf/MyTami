@@ -16,12 +16,23 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".travel_request.RoomDetailActivity"
+            android:label="Superior Twin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".flight_reservation.FlightConfirmationActivity"
             android:label="Confirmation"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".flight_reservation.FlightReservationActivity"
             android:label="Flight Reservation" />
+        <activity
+            android:name=".travel_request.HotelDetailActivity"
+            android:label="Best Western Papilio Hotel" />
         <activity
             android:name=".travel_request.TravelBookingActivity"
             android:label="Meeting Client Telkomsel" />
