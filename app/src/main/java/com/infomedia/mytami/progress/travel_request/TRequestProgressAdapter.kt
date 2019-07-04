@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.progress.travel_request
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,17 +9,19 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.infomedia.mytami.model.ReimbursementRequest
+import com.infomedia.mytami.R
+import com.infomedia.mytami.model.TravelRequest
 
 
-class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequest>, private val context: Context,
-                                   private val mListener: OnItemClicked)
-    : RecyclerView.Adapter<ReimbursementProgressAdapter.ViewHolder>() {
+class TRequestProgressAdapter(private val listItems: List<TravelRequest>, private val context: Context,
+                              private val mListener: OnItemClicked
+)
+    : RecyclerView.Adapter<TRequestProgressAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_progress, parent, false)
+            .inflate(R.layout.item_progress, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -28,14 +30,16 @@ class ReimbursementProgressAdapter(private val listItems: List<ReimbursementRequ
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = listItems[position]
+       val item = listItems[position]
         holder.tvRequestId?.text = item.id+"-"+item.title
         holder.tvRequestDate?.text = "Request date : "+item.requestDate
         holder.tvTravelDate?.text = "Travel date : "+item.travelDate
         holder.tvDestination?.text = item.origin+"-"+item.destination
         holder.tvRequestStatus?.text = item.status
+
         holder.layoutStatus?.background = ContextCompat.getDrawable(context,
-            R.drawable.rounded_corner_reimbursement_status_0)
+            R.drawable.rounded_corner_tprogress_status_0
+        )
 
         holder.cardView?.setOnClickListener{
             mListener.onItemClick(position)

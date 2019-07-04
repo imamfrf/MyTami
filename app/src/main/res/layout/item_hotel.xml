@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_hotel"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/md_white_1000"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/img_hotel_item"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@color/colorPrimary"
+            app:srcCompat="@drawable/airport_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/img_hotel_item"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_8dp">
+
+            <TextView
+                android:id="@+id/tv_hotel_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ritz Carlton Jakarta"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingBar_hotel_item"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/md_yellow_800"
+                android:rating="5"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_location_hotel_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_location_hotel_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_hotel_address_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kuningan, Jakarta Selatan"
+                    android:textColor="@color/colorTextBlack"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_start_from_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Start from"
+                android:textColor="@color/colorTextBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hotel_lowest_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/hotel_lowest_price_item"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                     />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="/night"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

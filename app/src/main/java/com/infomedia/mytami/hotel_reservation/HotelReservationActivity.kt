@@ -1,50 +1,49 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.hotel_reservation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.infomedia.mytami.model.TravelRequest
-import kotlinx.android.synthetic.main.activity_travel_request_approval.*
+import com.infomedia.mytami.R
+import com.infomedia.mytami.model.Hotel
+import kotlinx.android.synthetic.main.activity_hotel_reservation.*
 
-class TravelRequestApprovalActivity : AppCompatActivity() {
-    private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelRequestApproval: RecyclerView
+class HotelReservationActivity : AppCompatActivity() {
+
+    private lateinit var listItems: ArrayList<Hotel>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel_request_approval)
+        setContentView(R.layout.activity_hotel_reservation)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerTravelRequestApproval = recyclerV_trequest_approval
-
-
+        val html = "<small>" + "<font color='#FFFFFF'>Jakarta: 01 July 2019, 2 Nights</font>" + "</small>"
+        supportActionBar?.subtitle = HtmlCompat.fromHtml(html, HtmlCompat.FROM_HTML_MODE_LEGACY)
 
         listItems = arrayListOf()
         listItems.add(
-            TravelRequest(
-                "TEL17774444", "Meeting Client BRI", "20 June 2019",
-                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
-            )
+            Hotel(
+                "001", "Hotel Mulia Jakarta", 5.0f,
+                "Sudirman, Jakarta Selatan", 950000.0, "http://www.asiadreams.com/wp-content/uploads/Hotel-Mulia-Senayan-Jakarta-Christmas-NY-1.jpg")
         )
 
-        recyclerTravelRequestApproval.apply {
+        recyclerV_hotel_reservation.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestApprovalAdapter(listItems, this@TravelRequestApprovalActivity,
-                object : TRequestApprovalAdapter.OnItemClicked {
-                    override fun onItemClick(position: Int){
+            adapter = HotelReservationAdapter(listItems, context,
+                object : HotelReservationAdapter.OnItemClicked {
+                    override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(context, TravelRequestApprovalDetail::class.java)
-                        startActivity(intent)
+//                        val intent = Intent(context, TravelRequestApprovalDetail::class.java)
+//                        startActivity(intent)
                     }
                 })
         }
-
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {

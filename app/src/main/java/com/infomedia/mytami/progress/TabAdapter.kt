@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.progress
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

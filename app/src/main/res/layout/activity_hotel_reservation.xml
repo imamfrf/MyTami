@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".approval.travel_request.TravelRequestApprovalActivity">
+    tools:context=".hotel_reservation.HotelReservationActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerV_trequest_approval"
+        android:id="@+id/recyclerV_hotel_reservation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

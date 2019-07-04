@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.approval.travel_cancel
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,38 +7,40 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.infomedia.mytami.model.ReimbursementRequest
-import kotlinx.android.synthetic.main.activity_reimbursement_approval.*
+import com.infomedia.mytami.R
+import com.infomedia.mytami.approval.travel_request.TRequestApprovalAdapter
+import com.infomedia.mytami.approval.travel_request.TravelRequestApprovalDetail
+import com.infomedia.mytami.model.TravelRequest
+import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
 
-class ReimbursementApprovalActivity : AppCompatActivity() {
+class TravelCancelApprovalActivity : AppCompatActivity() {
 
-    private lateinit var listItems: ArrayList<ReimbursementRequest>
-    private lateinit var recyclerReimbursementApproval: RecyclerView
+    private lateinit var listItems: ArrayList<TravelRequest>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reimbursement_approval)
+        setContentView(R.layout.activity_travel_cancel_approval)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerReimbursementApproval = recyclerV_reimbursement_approval
 
 
 
         listItems = arrayListOf()
         listItems.add(
-            ReimbursementRequest(
+            TravelRequest(
                 "TEL17774444", "Meeting Client BRI", "20 June 2019",
                 "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_0)
             )
         )
 
-        recyclerV_reimbursement_approval.apply {
+        recyclerV_tcancel_approval.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = ReimbursementApprovalAdapter(listItems, context,
-                object : ReimbursementApprovalAdapter.OnItemClicked {
-                    override fun onItemClick(position: Int){
+            adapter = TRequestApprovalAdapter(listItems,
+                this@TravelCancelApprovalActivity,
+                object : TRequestApprovalAdapter.OnItemClicked {
+                    override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
                         val intent = Intent(context, TravelRequestApprovalDetail::class.java)
                         startActivity(intent)
@@ -49,7 +51,7 @@ class ReimbursementApprovalActivity : AppCompatActivity() {
     }
 
     private fun getReverseLinearLayoutManager(): LinearLayoutManager {
-        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, true)
+        val reverseLinearLayoutManager = LinearLayoutManager(applicationContext, RecyclerView.VERTICAL, true)
         reverseLinearLayoutManager.stackFromEnd = true
         return reverseLinearLayoutManager
     }

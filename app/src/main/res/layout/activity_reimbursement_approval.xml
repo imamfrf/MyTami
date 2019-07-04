@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReimbursementApprovalActivity">
+    tools:context=".approval.reimbursement.ReimbursementApprovalActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV_reimbursement_approval"

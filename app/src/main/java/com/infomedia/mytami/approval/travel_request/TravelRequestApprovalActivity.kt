@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.approval.travel_request
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,21 +7,19 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.R
 import com.infomedia.mytami.model.TravelRequest
-import kotlinx.android.synthetic.main.activity_travel_cancel_approval.*
+import kotlinx.android.synthetic.main.activity_travel_request_approval.*
 
-class TravelCancelApprovalActivity : AppCompatActivity() {
-
+class TravelRequestApprovalActivity : AppCompatActivity() {
     private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelCancelApproval: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel_cancel_approval)
+        setContentView(R.layout.activity_travel_request_approval)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        recyclerTravelCancelApproval = recyclerV_tcancel_approval
 
 
 
@@ -33,12 +31,13 @@ class TravelCancelApprovalActivity : AppCompatActivity() {
             )
         )
 
-        recyclerTravelCancelApproval.apply {
+        recyclerV_trequest_approval.apply {
             layoutManager = getReverseLinearLayoutManager()
 
-            adapter = TRequestApprovalAdapter(listItems, this@TravelCancelApprovalActivity,
+            adapter = TRequestApprovalAdapter(listItems,
+                this@TravelRequestApprovalActivity,
                 object : TRequestApprovalAdapter.OnItemClicked {
-                    override fun onItemClick(position: Int){
+                    override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
                         val intent = Intent(context, TravelRequestApprovalDetail::class.java)
                         startActivity(intent)
@@ -63,5 +62,4 @@ class TravelCancelApprovalActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-    }
-
+}

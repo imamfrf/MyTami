@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.approval.reimbursement
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,17 +9,19 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.R
 import com.infomedia.mytami.model.ReimbursementRequest
 
 
 class ReimbursementApprovalAdapter(private val listItems: List<ReimbursementRequest>, private val context: Context,
-                                   private val mListener: OnItemClicked)
+                                   private val mListener: OnItemClicked
+)
     : RecyclerView.Adapter<ReimbursementApprovalAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_approval, parent, false)
+            .inflate(R.layout.item_approval, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -35,7 +37,8 @@ class ReimbursementApprovalAdapter(private val listItems: List<ReimbursementRequ
         holder.tvDestination?.text = item.origin+"-"+item.destination
         holder.tvRequestStatus?.text = item.status
         holder.layoutStatus?.background = ContextCompat.getDrawable(context,
-            R.drawable.rounded_corner_reimbursement_status_0)
+            R.drawable.rounded_corner_reimbursement_status_0
+        )
 
         holder.cardView?.setOnClickListener{
             mListener.onItemClick(position)

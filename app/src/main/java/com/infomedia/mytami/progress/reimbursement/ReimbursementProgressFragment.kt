@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.progress.reimbursement
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,19 +8,18 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.R
 import com.infomedia.mytami.model.ReimbursementRequest
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_reimbursement_progress.view.*
 
 class ReimbursementProgressFragment : Fragment() {
     private lateinit var listItems: ArrayList<ReimbursementRequest>
-    private lateinit var recyclerReimbursement: RecyclerView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_reimbursement_progress, null)
 
-        recyclerReimbursement = view.recyclerV_reimbursement
 
 
         listItems = arrayListOf()
@@ -31,12 +30,12 @@ class ReimbursementProgressFragment : Fragment() {
             )
         )
 
-        recyclerReimbursement.apply {
+        view.recyclerV_reimbursement.apply {
             layoutManager = getReverseLinearLayoutManager()
 
             adapter = ReimbursementProgressAdapter(listItems, context,
                 object : ReimbursementProgressAdapter.OnItemClicked {
-                    override fun onItemClick(position: Int){
+                    override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
 
                     }

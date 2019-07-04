@@ -1,7 +1,8 @@
-package com.infomedia.mytami;
+package com.infomedia.mytami.approval.travel_request;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.infomedia.mytami.R;
 
 public class TravelRequestApprovalDetail extends AppCompatActivity {
 

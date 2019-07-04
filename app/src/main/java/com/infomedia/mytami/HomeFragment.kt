@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.infomedia.mytami.approval.reimbursement.ReimbursementApprovalActivity
+import com.infomedia.mytami.approval.travel_cancel.TravelCancelApprovalActivity
+import com.infomedia.mytami.approval.travel_request.TravelRequestApprovalActivity
 import com.infomedia.mytami.reimbursement.ReimbursementTravelTypeActivity
 import com.infomedia.mytami.travel_request.TravelRequestTravelTypeActivity
 import kotlinx.android.synthetic.main.fragment_home.view.*

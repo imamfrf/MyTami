@@ -1,7 +1,5 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.progress
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_progress.*
+import com.infomedia.mytami.R
+import com.infomedia.mytami.progress.reimbursement.ReimbursementProgressFragment
+import com.infomedia.mytami.progress.travel_request.TRequestProgressFragment
 
 
 class ProgressFragment : Fragment() {

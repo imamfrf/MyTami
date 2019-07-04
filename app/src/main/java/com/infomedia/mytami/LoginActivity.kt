@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var password: String
     private lateinit var corporate: String
     private lateinit var level: String
-    private val loginUrl = "http://8590242d.ngrok.io/mytami/api.php?callapi=login"
+    private val loginUrl = "http://b46a3f89.ngrok.io/mytami/api.php?callapi=login"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
