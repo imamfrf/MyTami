@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var password: String
     private lateinit var corporate: String
     private lateinit var level: String
-    private val loginUrl = "http://8590242d.ngrok.io/mytami/api.php?callapi=login"
+    private val loginUrl = "http://b46a3f89.ngrok.io/mytami/api.php?callapi=login"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,8 +58,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         button_login.setOnClickListener {
-            username = editText_login_id.text.toString().toLowerCase()
-            password = editText_login_password.text.toString()
+            username = edit_text_login_id.text.toString().toLowerCase()
+            password = edit_text_login_password.text.toString()
             corporate = spinnerCorporate.selectedItem.toString()
             level = spinnerLevel.selectedItem.toString()
 
@@ -154,13 +154,13 @@ class LoginActivity : AppCompatActivity() {
      */
     private fun validateInputs(): Boolean {
         if ("" == username) {
-            editText_login_id.error = resources.getString(R.string.login_username_empty)
-            editText_login_id.requestFocus()
+            edit_text_login_id.error = resources.getString(R.string.login_username_empty)
+            edit_text_login_id.requestFocus()
             return false
         }
         if ("" == password) {
-            editText_login_password.error = resources.getString(R.string.login_password_empty)
-            editText_login_password.requestFocus()
+            edit_text_login_password.error = resources.getString(R.string.login_password_empty)
+            edit_text_login_password.requestFocus()
             return false
         }
         return true

@@ -31,7 +31,7 @@
             android:src="@drawable/ic_stack_of_money_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_departure_flight_fare"
+            android:id="@+id/text_input_layout_departure_flight_fare"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -42,7 +42,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText_departure_flight_fare"
+                    android:id="@+id/edit_text_departure_flight_fare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Departure Flight Fare"
@@ -119,7 +119,7 @@
             android:src="@drawable/ic_stack_of_money_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_return_flight_fare"
+            android:id="@+id/text_input_layout_return_flight_fare"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -130,7 +130,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText_return_flight_fare"
+                    android:id="@+id/edit_text_return_flight_fare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Return Flight Fare"

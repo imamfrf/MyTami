@@ -77,9 +77,9 @@ class FlightReservationActivity : AppCompatActivity(),
     }
 
     private fun setupRecyclerView() {
-        recyclerView.layoutManager = getReverseLinearLayoutManager()
+        recycler_view.layoutManager = getReverseLinearLayoutManager()
         mAdapter = FlightReservationAdapter(mFlights, this)
-        recyclerView.adapter = mAdapter
+        recycler_view.adapter = mAdapter
     }
 
     override fun onItemClick(id: String) {

@@ -21,393 +21,41 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:background="@color/md_white_1000"
-                android:orientation="vertical"
-                android:paddingStart="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_12dp"
-                android:paddingEnd="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_12dp">
+            <include layout="@layout/content_request_detail" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/padding_8dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Request Detail" />
+            <include layout="@layout/content_travel_information_description" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+            <include layout="@layout/content_event_detail" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_id_travel_22px" />
+            <include layout="@layout/content_trip_detail" />
 
-                    <TextView
-                        android:id="@+id/textView_travel_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_4dp"
-                        android:text="TEL155073309715"
-                        android:textColor="@color/colorPrimary" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_calendar_22px" />
-
-                    <TextView
-                        android:id="@+id/textView_request_date"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/padding_4dp"
-                        android:text="20 June 2019"
-                        android:textColor="@color/colorPrimary" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_id_card_22px" />
-
-                    <TextView
-                        android:id="@+id/textView_login_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/padding_4dp"
-                        android:text="telin1"
-                        android:textColor="@color/colorPrimary" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_airplane_22px" />
-
-                    <TextView
-                        android:id="@+id/textView_trip_type"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/padding_4dp"
-                        android:text="Round Trip"
-                        android:textColor="@color/colorPrimary" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_additional_22px" />
-
-                    <TextView
-                        android:id="@+id/textView_others"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/padding_4dp"
-                        android:text="Other Cost Center, Diskresi"
-                        android:textColor="@color/colorPrimary" />
-                </LinearLayout>
-            </LinearLayout>
+            <include layout="@layout/content_comment" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:background="@color/md_white_1000"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_12dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_8dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Travel Information" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_4dp"
-                    android:text="Purpose and Objectives"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/textView_purpose_and_objectives"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_16dp"
-                    android:text="Meeting Client MCD"
-                    android:textColor="@color/md_grey_900"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_4dp"
-                    android:text="Note"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/textView_note"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rapat pengembangan aplikasi mobile"
-                    android:textColor="@color/md_grey_900"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:background="@color/md_white_1000"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_12dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_16dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Event Detail" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_bold"
-                            android:text="Start Date"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView_event_start_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_light"
-                            android:text="Monday, 24 June 2019"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/img_event_arrow" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingLeft="@dimen/padding_16dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_bold"
-                            android:text="End Date"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/event_end_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_light"
-                            android:text="Thursday, 27 June 2019"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:background="@color/md_white_1000"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_12dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_16dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Trip Detail" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView_depart_from"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_bold"
-                            android:text="Jakarta"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView_departure_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_light"
-                            android:text="Depart, 23 June 2019"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/img_trip_arrow" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingLeft="@dimen/padding_16dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView_depart_to"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_bold"
-                            android:text="Surabaya"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView_return_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/lato_light"
-                            android:text="Return, 27 June 2019"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:background="@color/md_white_1000"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_12dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_12dp">
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/textInputLayout_comment"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/editText_note"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Comment"
-                        android:inputType="text" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
                 android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_margin="@dimen/margin_10dp">
+                android:weightSum="2">
+
                 <Button
-                    android:layout_weight="1"
                     android:id="@+id/button_reject"
                     style="@style/AppTheme.RoundedCornerMaterialButtonRed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_4dp"
+                    android:layout_weight="1"
                     android:text="Reject"
                     android:textAllCaps="false"
-                    android:layout_marginRight="@dimen/margin_4dp"
                     android:textSize="16sp" />
 
                 <Button
-                    android:layout_weight="1"
                     android:id="@+id/button_approve"
                     style="@style/AppTheme.RoundedCornerMaterialButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_4dp"
+                    android:layout_weight="1"
                     android:text="Approve"
                     android:textAllCaps="false"
                     android:textSize="16sp" />

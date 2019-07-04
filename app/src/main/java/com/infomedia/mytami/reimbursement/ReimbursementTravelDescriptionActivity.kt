@@ -37,7 +37,7 @@ class ReimbursementTravelDescriptionActivity : AppCompatActivity() {
                 expandable_layout.expand()
             }
             mRotationAngle = if (mRotationAngle == 0) 180 else 0
-            imageView_expand_arrow.animate().rotation(mRotationAngle.toFloat()).setDuration(500).start()
+            image_view_expand_arrow.animate().rotation(mRotationAngle.toFloat()).setDuration(500).start()
         }
     }
 

@@ -168,13 +168,13 @@
             android:src="@drawable/ic_location_from_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_from"
+            android:id="@+id/text_input_layout_from"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/editText_from"
+                android:id="@+id/edit_text_from"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="From"
@@ -200,13 +200,13 @@
             android:src="@drawable/ic_location_to_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_to"
+            android:id="@+id/text_input_layout_to"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/editText_to"
+                android:id="@+id/edit_text_to"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="To"
@@ -232,13 +232,13 @@
             android:src="@drawable/ic_calendar_departure_date_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_departure_date"
+            android:id="@+id/text_input_layout_departure_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/editText_departure_date"
+                android:id="@+id/edit_text_departure_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Departure"
@@ -262,7 +262,7 @@
             android:paddingEnd="@dimen/padding_4dp">
 
             <CheckBox
-                android:id="@+id/checkBox_departure"
+                android:id="@+id/check_box_departure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onCheckboxClicked"
@@ -281,13 +281,13 @@
         </RelativeLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_reason_departure"
+            android:id="@+id/text_input_layout_reason_departure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone">
 
             <EditText
-                android:id="@+id/editText_reason_departure"
+                android:id="@+id/edit_text_reason_departure"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Reason"
@@ -313,13 +313,13 @@
             android:src="@drawable/ic_calendar_return_date_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_return_date"
+            android:id="@+id/text_input_layout_return_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/editText_return_date"
+                android:id="@+id/edit_text_return_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Return Date"
@@ -343,7 +343,7 @@
             android:paddingEnd="@dimen/padding_4dp">
 
             <CheckBox
-                android:id="@+id/checkBox_return"
+                android:id="@+id/check_box_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onCheckboxClicked"
@@ -362,13 +362,13 @@
         </RelativeLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_reason_return"
+            android:id="@+id/text_input_layout_reason_return"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone">
 
             <EditText
-                android:id="@+id/editText_reason_return"
+                android:id="@+id/edit_text_reason_return"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Reason"

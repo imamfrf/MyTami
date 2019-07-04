@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_logo"
+        android:id="@+id/image_view_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -27,39 +27,39 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_welcome"
+        android:id="@+id/text_view_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
         android:text="Welcome!"
         android:textColor="@color/colorPrimary"
         android:textSize="27sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/image_view_logo" />
 
     <TextView
-        android:id="@+id/textView_login_to_continue"
+        android:id="@+id/text_view_login_to_continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@font/lato_light"
         android:text="Login to continue"
         android:textColor="@color/colorPrimary"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_welcome" />
 
     <LinearLayout
         android:id="@+id/linear_layout_trip_information"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_login_to_continue">
+        app:layout_constraintTop_toBottomOf="@+id/text_view_login_to_continue">
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinner_corporate"
@@ -94,7 +94,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editText_login_id"
+            android:id="@+id/edit_text_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_22dp"
@@ -115,7 +115,7 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editText_login_password"
+            android:id="@+id/edit_text_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_22dp"
@@ -138,7 +138,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView_forgot_password"
+        android:id="@+id/text_view_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_22dp"
@@ -165,6 +165,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_forgot_password" />
+        app:layout_constraintTop_toBottomOf="@id/text_view_forgot_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

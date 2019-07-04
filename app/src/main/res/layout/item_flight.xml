@@ -32,7 +32,7 @@
             android:drawableTop="@drawable/img_airline_air_asia"
             android:drawablePadding="4dp"
             android:ellipsize="marquee"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/lato"
             android:singleLine="true"
             android:text="QZ-123"
             android:textSize="16sp" />
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/lato"
                 android:text="Air Asia"
                 android:textSize="16sp" />
 
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/divider"
                 android:layout_centerInParent="true"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/lato"
                 android:text="1h 10m"
                 android:textSize="11sp" />
 
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/divider"
                 android:layout_centerInParent="true"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/lato"
                 android:text="Direct"
                 android:textSize="11sp" />
 
@@ -129,7 +129,7 @@
                 android:layout_alignStart="@id/text_view_departure_time"
                 android:layout_alignEnd="@id/text_view_departure_time"
                 android:layout_alignParentBottom="true"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/lato"
                 android:gravity="center"
                 android:text="CGK"
                 android:textSize="12sp" />
@@ -141,7 +141,7 @@
                 android:layout_alignStart="@id/text_view_arrival_time"
                 android:layout_alignEnd="@id/text_view_arrival_time"
                 android:layout_alignParentBottom="true"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/lato"
                 android:gravity="center"
                 android:text="SUB"
                 android:textSize="12sp" />

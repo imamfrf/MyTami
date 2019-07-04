@@ -17,14 +17,14 @@
         android:text="Travel Information" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_purpose_and_objectives"
+        android:id="@+id/text_input_layout_purpose_and_objectives"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="@dimen/padding_16dp"
         android:paddingEnd="@dimen/padding_16dp">
 
         <EditText
-            android:id="@+id/editText_purpose_and_objectives"
+            android:id="@+id/edit_text_purpose_and_objectives"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Purpose and Objectives"
@@ -34,14 +34,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_note"
+        android:id="@+id/text_input_layout_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="@dimen/padding_16dp"
         android:paddingEnd="@dimen/padding_16dp">
 
         <EditText
-            android:id="@+id/editText_note"
+            android:id="@+id/edit_text_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Note"

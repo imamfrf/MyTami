@@ -46,34 +46,34 @@ class TravelRequestTravelItineraryActivity : AppCompatActivity() {
             val checked: Boolean = view.isChecked
 
             when (view.id) {
-                R.id.checkBox_departure -> {
+                R.id.check_box_departure -> {
                     if (checked) {
-                        fadeInAnimation(textInputLayout_reason_departure)
+                        fadeInAnimation(text_input_layout_reason_departure)
                     } else {
-                        textInputLayout_reason_departure.visibility = View.GONE
+                        text_input_layout_reason_departure.visibility = View.GONE
                     }
                 }
-                R.id.checkBox_return -> {
+                R.id.check_box_return -> {
                     if (checked) {
-                        fadeInAnimation(textInputLayout_reason_return)
+                        fadeInAnimation(text_input_layout_reason_return)
                     } else {
-                        textInputLayout_reason_return.visibility = View.GONE
+                        text_input_layout_reason_return.visibility = View.GONE
                     }
                 }
-                R.id.checkBox_cost_center -> {
+                R.id.check_box_cost_center -> {
                     if (checked) {
-                        fadeInAnimation(textInputLayout_cost_center)
+                        fadeInAnimation(text_input_layout_cost_center)
                     } else {
-                        textInputLayout_cost_center.visibility = View.GONE
+                        text_input_layout_cost_center.visibility = View.GONE
                     }
                 }
-                R.id.checkBox_diskresi -> {
+                R.id.check_box_diskresi -> {
                     if (checked) {
-                        fadeInAnimation(textInputLayout_diskresi_type)
-                        fadeInAnimation(textInputLayout_diskresi_reason)
+                        fadeInAnimation(text_input_layout_diskresi_type)
+                        fadeInAnimation(text_input_layout_diskresi_reason)
                     } else {
-                        textInputLayout_diskresi_type.visibility = View.GONE
-                        textInputLayout_diskresi_reason.visibility = View.GONE
+                        text_input_layout_diskresi_type.visibility = View.GONE
+                        text_input_layout_diskresi_reason.visibility = View.GONE
                     }
                 }
             }

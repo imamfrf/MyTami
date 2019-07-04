@@ -31,7 +31,7 @@
             android:src="@drawable/ic_stack_of_money_27px" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout_hotel_amount"
+            android:id="@+id/text_input_layout_hotel_amount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -42,7 +42,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText_hotel_amount"
+                    android:id="@+id/edit_text_hotel_amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Amount"

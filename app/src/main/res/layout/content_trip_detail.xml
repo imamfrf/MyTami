@@ -22,7 +22,7 @@
         android:background="@color/md_white_1000"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingStart="0dp"
+        android:paddingStart="@dimen/padding_16dp"
         android:paddingEnd="@dimen/padding_16dp">
 
         <LinearLayout
@@ -32,20 +32,24 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/text_view_departure_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
+                android:ellipsize="marquee"
                 android:fontFamily="@font/lato_bold"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
                 android:text="Jakarta (CGK)"
                 android:textColor="@color/colorPrimary"
-                android:textSize="23sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/lato"
                 android:text="Depart Date"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp" />
@@ -53,17 +57,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginTop="@dimen/margin_4dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Sun, 23 June 2019"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/padding_12dp"
             android:src="@drawable/img_trip_arrow" />
 
         <LinearLayout
@@ -73,20 +77,24 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@id/text_view_arrival_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
+                android:ellipsize="marquee"
                 android:fontFamily="@font/lato_bold"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
                 android:text="Surabaya (SUB)"
                 android:textColor="@color/colorPrimary"
-                android:textSize="23sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
-                android:layout_marginTop="@dimen/margin_4dp"
-                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/lato"
                 android:text="Return Date"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp" />
@@ -94,12 +102,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_16dp"
                 android:layout_marginTop="@dimen/margin_4dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Thu, 27 June 2019"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

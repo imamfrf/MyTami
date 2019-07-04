@@ -45,7 +45,7 @@
             android:src="@drawable/ic_document_27px" />
 
         <TextView
-            android:id="@+id/textView_document"
+            android:id="@+id/text_view_document"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

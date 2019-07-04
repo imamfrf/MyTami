@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.infomedia.mytami.R
 import kotlinx.android.synthetic.main.activity_travel_request_travel_description.*
 import kotlinx.android.synthetic.main.content_cost_detail.*
+import kotlinx.android.synthetic.main.content_trip_detail.*
 import net.cachapa.expandablelayout.ExpandableLayout.OnExpansionUpdateListener
 
 
@@ -38,8 +39,11 @@ class TravelRequestTravelDescriptionActivity : AppCompatActivity() {
                 expandable_layout.expand()
             }
             mRotationAngle = if (mRotationAngle == 0) 180 else 0
-            imageView_expand_arrow.animate().rotation(mRotationAngle.toFloat()).setDuration(500).start()
+            image_view_expand_arrow.animate().rotation(mRotationAngle.toFloat()).setDuration(500).start()
         }
+
+        text_view_departure_city.isSelected = true
+        text_view_arrival_city.isSelected = true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
