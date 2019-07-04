@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.approval.travel_request
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,16 +7,18 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.R
 import com.infomedia.mytami.model.TravelRequest
 
 class TRequestApprovalAdapter(private val listItems: List<TravelRequest>, private val context: Context,
-                              private val mListener: OnItemClicked)
+                              private val mListener: OnItemClicked
+)
     : RecyclerView.Adapter<TRequestApprovalAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_approval, parent, false)
+            .inflate(R.layout.item_approval, parent, false)
         return ViewHolder(itemView)
     }
 

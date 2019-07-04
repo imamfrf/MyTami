@@ -1,4 +1,4 @@
-package com.infomedia.mytami
+package com.infomedia.mytami.progress.travel_request
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.infomedia.mytami.R
+import com.infomedia.mytami.approval.travel_request.TravelRequestApprovalDetail
 import com.infomedia.mytami.model.TravelRequest
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
@@ -17,13 +19,11 @@ import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 class TRequestProgressFragment : Fragment() {
 
     private lateinit var listItems: ArrayList<TravelRequest>
-    private lateinit var recyclerTravelRequest: RecyclerView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_trequest_progress, null)
 
-        recyclerTravelRequest = view.recyclerV_tprogress
 
 
 
@@ -35,12 +35,12 @@ class TRequestProgressFragment : Fragment() {
             )
         )
 
-        recyclerTravelRequest.apply {
+        view.recyclerV_tprogress.apply {
             layoutManager = getReverseLinearLayoutManager()
 
             adapter = TRequestProgressAdapter(listItems, context,
                 object : TRequestProgressAdapter.OnItemClicked {
-                    override fun onItemClick(position: Int){
+                    override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
                         val intent = Intent(context, TravelRequestApprovalDetail::class.java)
                         startActivity(intent)

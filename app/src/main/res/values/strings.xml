@@ -24,6 +24,7 @@
     <string name="hotel_reservation">Hotel Reservation</string>
     <string name="travel_request_approved_waiting_for_booking">Travel Request Approved. Waiting for Booking</string>
     <string name="cancel">Cancel</string>
+    <string name="hotel_lowest_price_item">IDR %1$s</string>
 
     <string-array name="corporates_array">
         <item>BKI</item>

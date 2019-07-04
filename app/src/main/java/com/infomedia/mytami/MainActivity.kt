@@ -1,14 +1,13 @@
 package com.infomedia.mytami
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem
 import androidx.core.content.ContextCompat
-import androidx.annotation.ColorRes
 import androidx.fragment.app.Fragment
+import com.infomedia.mytami.progress.ProgressFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 

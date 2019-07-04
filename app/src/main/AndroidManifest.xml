@@ -15,11 +15,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".hotel_reservation.ChooseRoomActivity" />
         <activity
             android:name=".travel_request.RoomDetailActivity"
             android:label="Superior Twin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -51,13 +53,13 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".ReimbursementApprovalActivity"
+            android:name=".approval.reimbursement.ReimbursementApprovalActivity"
             android:label="Reimbursement Approval" />
         <activity
-            android:name=".TravelCancelApprovalActivity"
+            android:name=".approval.travel_cancel.TravelCancelApprovalActivity"
             android:label="Travel Cancel Approval" />
         <activity
-            android:name=".TravelRequestApprovalDetail"
+            android:name=".approval.travel_request.TravelRequestApprovalDetail"
             android:label="Meeting Client MCD" />
         <activity
             android:name=".travel_request.TravelRequestTravelDescriptionActivity"
@@ -74,7 +76,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".TravelRequestApprovalActivity"
+            android:name=".approval.travel_request.TravelRequestApprovalActivity"
             android:label="Travel Request Approval" />
         <activity android:name=".LoginActivity">
             <intent-filter>
