@@ -13,10 +13,10 @@ import com.infomedia.mytami.R
 import com.infomedia.mytami.model.TravelRequest
 
 
-class TRequestProgressAdapter(private val listItems: List<TravelRequest>, private val context: Context,
-                              private val mListener: OnItemClicked
-)
-    : RecyclerView.Adapter<TRequestProgressAdapter.ViewHolder>() {
+class TRequestProgressAdapter(
+    private val listItems: List<TravelRequest>, private val context: Context,
+    private val mListener: OnItemClicked
+) : RecyclerView.Adapter<TRequestProgressAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,18 +30,26 @@ class TRequestProgressAdapter(private val listItems: List<TravelRequest>, privat
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-       val item = listItems[position]
-        holder.tvRequestId?.text = item.id+"-"+item.title
-        holder.tvRequestDate?.text = "Request date : "+item.requestDate
-        holder.tvTravelDate?.text = "Travel date : "+item.travelDate
-        holder.tvDestination?.text = item.origin+"-"+item.destination
+        val item = listItems[position]
+        holder.tvRequestId?.text = item.id + "-" + item.title
+        holder.tvRequestDate?.text = "Request date : " + item.requestDate
+        holder.tvTravelDate?.text = "Travel date : " + item.travelDate
+        holder.tvDestination?.text = item.origin + "-" + item.destination
         holder.tvRequestStatus?.text = item.status
 
-        holder.layoutStatus?.background = ContextCompat.getDrawable(context,
-            R.drawable.rounded_corner_tprogress_status_0
-        )
+        if (item.status == context.getString(R.string.tprogress_status_0)) {
+            holder.layoutStatus?.background = ContextCompat.getDrawable(
+                context,
+                R.drawable.rounded_corner_tprogress_status_0
+            )
+        } else if (item.status == context.getString(R.string.tprogress_status_1)) {
+            holder.layoutStatus?.background = ContextCompat.getDrawable(
+                context,
+                R.drawable.rounded_corner_tprogress_status_1
+            )
+        }
 
-        holder.cardView?.setOnClickListener{
+        holder.cardView?.setOnClickListener {
             mListener.onItemClick(position)
         }
     }

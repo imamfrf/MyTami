@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         supportActionBar?.hide()
 
-        if (SharedPrefManager(applicationContext).isLoggedIn()){
+        if (SharedPrefManager(applicationContext).isLoggedIn()) {
             finish()
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
@@ -63,17 +63,20 @@ class LoginActivity : AppCompatActivity() {
             corporate = spinnerCorporate.selectedItem.toString()
             level = spinnerLevel.selectedItem.toString()
 
-            if (corporate == "Telin"){
-                corporate = "111111"
-            }
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
-            if (level == "User"){
-                level = "users"
-            }
-
-            if (validateInputs()){
-                login()
-            }
+//            if (corporate == "Telin"){
+//                corporate = "111111"
+//            }
+//
+//            if (level == "User"){
+//                level = "users"
+//            }
+//
+//            if (validateInputs()){
+//            login()
+//            }
 
 
         }
@@ -110,7 +113,8 @@ class LoginActivity : AppCompatActivity() {
                             userJson.getString("userlevel"),
                             userJson.getString("c_kode_unit"),
                             userJson.getString("email"),
-                            date)
+                            date
+                        )
 
                         //storing the user in shared preferences
                         SharedPrefManager(applicationContext).getInstance(applicationContext).userLogin(user)

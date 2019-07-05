@@ -28,13 +28,7 @@
             android:label="Flight Reservation" />
         <activity
             android:name=".travel_request.TravelBookingActivity"
-            android:label="Travel Booking">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="Travel Booking" />
         <activity
             android:name=".travel_request.HotelDetailActivity"
             android:label="Best Western Papilio Hotel" />

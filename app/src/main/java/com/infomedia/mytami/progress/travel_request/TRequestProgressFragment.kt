@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.infomedia.mytami.R
 import com.infomedia.mytami.approval.travel_request.TravelRequestApprovalDetail
 import com.infomedia.mytami.model.TravelRequest
+import com.infomedia.mytami.travel_request.TravelBookingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_trequest_progress.view.*
 
@@ -22,7 +23,7 @@ class TRequestProgressFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view: View = inflater!!.inflate(R.layout.fragment_trequest_progress, null)
+        val view: View = inflater.inflate(R.layout.fragment_trequest_progress, null)
 
 
 
@@ -35,20 +36,32 @@ class TRequestProgressFragment : Fragment() {
             )
         )
 
+        listItems.add(
+            TravelRequest(
+                "TEL17774444", "Meeting Client BRI", "20 June 2019",
+                "30 June 2019", "Jakarta", "Medan", getString(R.string.tprogress_status_1)
+            )
+        )
+
         view.recyclerV_tprogress.apply {
-            layoutManager = getReverseLinearLayoutManager()
+            layoutManager = getReverseLinearLayoutManager() as RecyclerView.LayoutManager?
 
             adapter = TRequestProgressAdapter(listItems, context,
                 object : TRequestProgressAdapter.OnItemClicked {
                     override fun onItemClick(position: Int) {
                         Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(context, TravelRequestApprovalDetail::class.java)
-                        startActivity(intent)
+                        if (listItems[position].status == getString(R.string.tprogress_status_0)) {
+                            val intent = Intent(context, TravelRequestApprovalDetail::class.java)
+                            startActivity(intent)
+                        } else if (listItems[position].status == getString(R.string.tprogress_status_1)) {
+                            val intent = Intent(context, TravelBookingActivity::class.java)
+                            startActivity(intent)
+                        }
                     }
                 })
         }
 
-        if (listItems.size > 0){
+        if (listItems.size > 0) {
             activity?.bottom_navigation?.setNotification(" ", 1)
         }
         return view
